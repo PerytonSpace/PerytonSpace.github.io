@@ -1,7 +1,40 @@
 html {
-    background-color: black;
+    background-color: #0D0D0D;
+    color: white;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li, a {
-    color: white;
+@font-face {
+    font-family: 'Space Mono';
+    src: url('/assets/font/SpaceMono-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('/assets/font/SpaceMono-Italic.ttf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('/assets/font/SpaceMono-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('/assets/font/SpaceMono-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 2em;
 }
