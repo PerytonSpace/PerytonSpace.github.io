@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare-content": "node scripts/prepare-content.mjs",
+    "sync-media": "node scripts/sync-public-media.mjs",
+    "generate-seo": "node scripts/generate-seo.mjs",
+    "prebuild": "npm run prepare-content && npm run sync-media && npm run generate-seo",
+    "dev": "npm run prepare-content && npm run sync-media && next dev",
+    "build": "npm run prebuild && next build",
+    "start": "npx serve out",
+    "deploy:cf": "npm run build && npx wrangler pages deploy out --project-name=peryton-space",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "typescript": "^5"
+  }
+}

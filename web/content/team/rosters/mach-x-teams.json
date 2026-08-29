@@ -1,0 +1,73 @@
+{
+  "title": "Mach-X Teams",
+  "status": "published",
+  "groups": [
+    {
+      "members": [
+        {
+          "name": "Luke Tremblin",
+          "role": "Co-Team Lead",
+          "photo": "/wp-content/uploads/2024/01/luke.png",
+          "linkedin": null,
+          "note": "I used to live right next to Cape Canaveral in Florida"
+        },
+        {
+          "name": "Ricardo Cavalheiro",
+          "role": "Co-Team Lead",
+          "photo": "/wp-content/uploads/2024/01/imagem11.png",
+          "linkedin": null,
+          "note": "I am a bodybuilder"
+        },
+        {
+          "name": "Macsen Iles",
+          "role": "Co-Head of Structures",
+          "photo": "/wp-content/uploads/2024/01/mac.png",
+          "linkedin": null,
+          "note": "I like Planes"
+        },
+        {
+          "name": "Cam Branney",
+          "role": "Co-Head of Structures",
+          "photo": "/wp-content/uploads/2024/01/cam.png",
+          "linkedin": null,
+          "note": "Did a placement at BAE systems and worked on"
+        },
+        {
+          "name": "Harvey Nixon",
+          "role": "Head of Avionics",
+          "photo": "/wp-content/uploads/2023/10/imagem3.gif",
+          "linkedin": null,
+          "note": "I am learning Italian"
+        },
+        {
+          "name": "Alex Hotten",
+          "role": "Head of Recovery",
+          "photo": "/wp-content/uploads/2024/01/luw.png",
+          "linkedin": null,
+          "note": "I will eat any food and have had Zebra, Impala, Crocodile, Crickets and Tarantula"
+        },
+        {
+          "name": "Tommy Richards",
+          "role": "Head of Testing",
+          "photo": "/wp-content/uploads/2024/01/tommy.png",
+          "linkedin": null,
+          "note": "I have flown a glider solo before, but I do not have a driver\u2019s license"
+        },
+        {
+          "name": "Charles Deebank",
+          "role": "Head of Launch",
+          "photo": "/wp-content/uploads/2024/01/charles.png",
+          "linkedin": null,
+          "note": "I am Scottish but don\u2019t own a kilt"
+        },
+        {
+          "name": "Caspar Pierce",
+          "role": "Head of Ground Station",
+          "photo": "/wp-content/uploads/2024/01/caspar.png",
+          "linkedin": null,
+          "note": "I once almost got frostbite whilst flying a Biplane"
+        }
+      ]
+    }
+  ]
+}

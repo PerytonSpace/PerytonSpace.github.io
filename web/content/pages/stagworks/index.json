@@ -1,0 +1,32 @@
+{
+  "slug": "stagworks",
+  "title": "StagWorks",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "StagWorks",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>StagWorks is Peryton Space’s home for projects outside the main competition programmes — high-altitude balloons, RF, composites, and FEPS boards.</p>"
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<ul><li><a href=\"/weather-balloon-division/\">Weather Balloon</a></li><li><a href=\"/stagworks/rf/\">RF experiments</a></li><li><a href=\"/stagworks/composites/\">Composite testing</a></li><li><a href=\"/stagworks/feps/\">FEPS boards</a></li></ul>"
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Course resources (composites / electronics) live in the <a href=\"/member-zone/\">Member Zone</a>, not here.</p>"
+      }
+    }
+  ]
+}

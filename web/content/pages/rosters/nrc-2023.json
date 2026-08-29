@@ -1,0 +1,27 @@
+{
+  "slug": "nrc-2023",
+  "title": "Team NRC 2023",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Team NRC 2023",
+        "level": 1
+      }
+    },
+    {
+      "type": "personGroups",
+      "props": {
+        "source": "team.rosters.nrc-2023"
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Back to National Rocketry Championship",
+        "href": "/nationalrocketry/"
+      }
+    }
+  ]
+}

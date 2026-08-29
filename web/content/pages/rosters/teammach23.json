@@ -1,0 +1,20 @@
+{
+  "slug": "teammach23",
+  "title": "Team Mach-23",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Team Mach-23",
+        "level": 1
+      }
+    },
+    {
+      "type": "personGroups",
+      "props": {
+        "source": "team.rosters.teammach23"
+      }
+    }
+  ]
+}

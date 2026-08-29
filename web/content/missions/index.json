@@ -1,0 +1,410 @@
+{
+  "missions": [
+    {
+      "id": "sdc",
+      "group": "missions",
+      "navLabel": "Satellite Design Competition",
+      "hubSlug": "satellite-design-competition",
+      "title": "Satellite Design Competition",
+      "introHtml": "<p>The UKSEDS Satellite Design Competition challenges students and young professionals to design and construct a CubeSat prototype addressing a specific challenge in the space industry. The programme follows a space-sector workflow — preliminary design review (PDR), critical design review (CDR), and test readiness review (TRR) — with industry partners such as Airbus.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/sdc-logo-22.23-300x300-removebg-preview.png\" alt=\"Satellite Design Competition logo\" loading=\"lazy\" /></figure>"
+          }
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Legacy teams page", "href": "/satellite-design-competition-teams/" },
+        { "label": "Team SDC 2023 (archive)", "href": "/teamsdc/" }
+      ],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "summary": "Most recent SDC campaign. Full write-up TBD (Severin / team).",
+          "highlights": [],
+          "awards": ["Best Innovation"],
+          "intake": "sdc-2024-2025"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "placeholder",
+          "summary": "Post-Myers competition year. Narrative and results TBD.",
+          "highlights": [],
+          "awards": [],
+          "intake": "sdc-2023-2024"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022–2023",
+          "status": "published",
+          "summary": "Peryton Space won the 2023 Satellite Design Competition. The team designed and built a CubeSat prototype addressing space debris — the 22/23 cycle focus — and took the prototype through rigorous testing.",
+          "highlights": [
+            "1st place — Satellite Design Competition 2023",
+            "3U CubeSat (D.A.V.E) to image and detect debris in LEO",
+            "PDR / CDR / TRR workflow with industry partners including Airbus"
+          ],
+          "awards": ["1st place — Satellite Design Competition 2023"],
+          "intake": "sdc-2022-2023",
+          "teamHref": "/teamsdc/",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": { "text": "D.A.V.E", "level": 2 }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>D.A.V.E is a 3U CubeSat designed to image and detect space debris in Low-Earth Orbit.</p><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/sdc-team-1.jpg\" alt=\"SDC 2022–2023 team\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/sdc.png\" alt=\"D.A.V.E CubeSat\" loading=\"lazy\" /></figure><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/picture3.png\" alt=\"SDC 2023 prototype\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/1689860853863.jpg\" alt=\"SDC 2023 testing\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/microsoftteams-image-15.png\" alt=\"Additional details of the 2023 satellite\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ort",
+      "group": "missions",
+      "navLabel": "Olympus Rover Trials",
+      "hubSlug": "olympus-rover-trials",
+      "title": "Olympus Rover Trials",
+      "introHtml": "<p>The Olympus Rover Trials (ORT) challenge student teams to design, build, and operate a rover for a simulated Mars sample return mission. Students create a rover concept, undergo a thorough review by space industry engineers, and balance performance parameters.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2023/10/ort-logo-22.23-1-300x300-1.png\" alt=\"Olympus Rover Trials logo\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": { "text": "Aims", "level": 2 }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<ol><li>Engage students in complex systems engineering for a realistic space mission.</li><li>Apply and learn technical skills relevant to the space industry in a project setting.</li><li>Develop teamwork, leadership, and project management skills.</li><li>Spark interest in space engineering and robotics.</li></ol><p>ORT gives students a hands-on, real-world experience to prepare them for careers in the space sector.</p>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": []
+    },
+    {
+      "id": "iosm",
+      "group": "missions",
+      "navLabel": "IOSM",
+      "hubSlug": "ukseds-in-orbit-servicing-and-manufacturing",
+      "title": "In-Orbit Servicing and Manufacturing",
+      "introHtml": "<p>UKSEDS In-Orbit Servicing and Manufacturing challenges teams to conceptualise a feasible business strategy and space mission proposal in the IOSM domain. The competition includes three reports and encourages interdisciplinary teams — mission design, engineering, business development, and other industry-relevant skills.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/ismc-logo-22_23-300x300-1.png\" alt=\"IOSM competition logo\" loading=\"lazy\" /></figure>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": [
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "published",
+          "summary": "Peryton Space won the 2024 IOSM UKSEDS competition in our first year competing. The team completed three challenges — detailed reports, posters, a business one-pager, and a presentation — tackling the space debris problem with STELLAR (Satellite Trash Elimination from LEO using Adhesive Removal): a satellite that uses an adhesive interface inspired by gecko feet to attach drag sails to debris and bring them back to Earth.",
+          "highlights": [
+            "First-year entry; overall competition winners",
+            "Three-challenge format: reports, posters, business one-pager, presentation",
+            "STELLAR concept: gecko-inspired adhesive drag sails for LEO debris"
+          ],
+          "awards": ["1st place — IOSM UKSEDS 2024"],
+          "intake": "iosm-2023-2024",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": { "text": "STELLAR", "level": 2 }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>With over 100,000 pieces of debris predicted in orbit by 2030, STELLAR proposes attaching drag sails via an adhesive interface inspired by gecko feet so debris can deorbit safely.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/screenshot_2024-09-30-23-46-56-428_com.instagram.android2.jpg\" alt=\"IOSM 2024 win announcement\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nrc",
+      "group": "launch",
+      "navLabel": "National Rocketry Championship",
+      "hubSlug": "nationalrocketry",
+      "title": "National Rocketry Championship",
+      "introHtml": "<p>UKSEDS created the National Rocketry Championships in 2013 to give university students with little or no rocketry experience hands-on practice designing, building, and launching a rocket. Teams aim for a mid-power rocket with a primary goal of reaching an apogee of 2500 ft, carry a payload, and submit a technical report for industry evaluation. <a href=\"https://hub.ukseds.org/p/comps-national-rocketry-championship-2023-24\" rel=\"noopener noreferrer\" target=\"_blank\">UKSEDS NRC hub</a>.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/onrc-logo-22.23-1-300x300-removebg-preview.png\" alt=\"National Rocketry Championship logo\" loading=\"lazy\" /></figure>"
+          }
+        }
+      ],
+      "relatedLinks": [
+        { "label": "Team NRC 2023 (archive)", "href": "/nrc-2023/" }
+      ],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "summary": "Write-up TBD — intake: NRC (−2y backlog).",
+          "highlights": [],
+          "awards": [],
+          "intake": "nrc-2024-2025"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "published",
+          "summary": "The NRC teams at Peryton Space faced a highly challenging competition this year, especially for newer engineers who were truly thrown in at the deep end. Despite that, they excelled — successfully designing and launching their rockets on competition day. Many aspects of their designs were highly innovative, demonstrating engineering practices often beyond what is typically expected from 1st and 2nd year students.",
+          "highlights": [
+            "Successful design and launch on competition day",
+            "Strong showing from newer engineers under pressure",
+            "Innovative design choices beyond typical early-year scope"
+          ],
+          "awards": [],
+          "intake": "nrc-2023-2024",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": { "text": "Competition day", "level": 2 }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image.jpeg\" alt=\"NRC 2023–2024 team\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-2-copy.jpeg\" alt=\"NRC 2023–2024 rocket\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-6-copy.jpeg\" alt=\"NRC 2023–2024 pad\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-3.jpeg\" alt=\"NRC 2023–2024 launch\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-1.jpeg\" alt=\"NRC 2023–2024 additional\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022–2023",
+          "status": "published",
+          "summary": "Following the success in 2022, the team tunnel-visioned on a poorly designed rocket. It was maximised for apogee but it relied too heavily on Open Rocket. The launch was a failure, with the rocket swerving off the rail. The rocket was recovered over 250 days after it was launched after it lost a battle against a tractor. This was a huge learning experience for the team…",
+          "highlights": [
+            "Apogee-focused design that over-trusted Open Rocket",
+            "Rail departure failure at launch",
+            "Airframe recovered 250+ days later (tractor damage)",
+            "Major learning year for the team"
+          ],
+          "awards": []
+        },
+        {
+          "id": "2021-2022",
+          "label": "2021–2022",
+          "status": "published",
+          "summary": "In our first year competing in the NRC, Peryton Space came 4th overall and achieved the 2nd highest apogee of the competition, 925m. Peryton 1 was the first rocket ever designed, built and launched by Peryton Space. It held a 100 g payload that measured the angular velocity, acceleration and velocity of the rocket, as well as the temperature of the air and the magnetic field of the Earth. The body of the rocket was recovered straight away but the nosecone detached. Thanks to an alarm on the payload, it was found 24 hours after launch the next day.",
+          "highlights": [
+            "First Peryton Space rocket: Peryton 1",
+            "100 g payload: angular velocity, acceleration, velocity, air temperature, magnetic field",
+            "Body recovered immediately; nosecone recovered next day via payload alarm"
+          ],
+          "awards": ["4th overall", "2nd highest apogee (925m)"]
+        }
+      ]
+    },
+    {
+      "id": "mach",
+      "group": "launch",
+      "navLabel": "Mach-X",
+      "hubSlug": "mach",
+      "title": "Mach-X",
+      "introHtml": "<p>Mach-X high-power rocketry at Machrihanish. Students design, build, and launch a rocket and CanSat — a satellite simulation that fits the volume and shape of a drinks can — with skills workshops supported by national space companies.</p>",
+      "relatedLinks": [
+        { "label": "Mach-X teams", "href": "/mach-x-teams/" },
+        { "label": "Team Mach-23", "href": "/teammach23/" }
+      ],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "summary": "Write-up TBD — intake: Mach (−1y backlog).",
+          "highlights": [],
+          "awards": [],
+          "intake": "mach-2024-2025"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "published",
+          "summary": "From 10–14 July, Peryton Space attended Mach-24. The team flew in the combined 1.5 &amp; 3 km category with the high-power rocket developed over the 2023/2024 academic year, aiming for a 3 km apogee. First-time composite manufacturing with flax-based fins and integrated solar cells on the nosecone, plus an entire test rocket — another team first. CanSat and recovery systems recorded the flight: the rocket reached 2.5 km, our highest apogee to date.",
+          "highlights": [
+            "Combined 1.5 &amp; 3 km category attempt",
+            "Highest apogee to date: 2.5 km",
+            "First flax composite fins and nosecone solar cells",
+            "First full test rocket built by the team"
+          ],
+          "awards": ["2nd place — combined category"],
+          "intake": "mach-2023-2024",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": { "text": "Rocket &amp; CanSat", "level": 2 }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/mach-22-logo_edited.webp\" alt=\"Mach competition logo\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/09/whatsapp-image-2024-09-30-at-23.52.56_e4f27044.jpg\" alt=\"Mach-24 rocket\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/09/whatsapp-image-2024-09-30-at-23.49.10_56c4163c.jpg\" alt=\"Mach-24 CanSat\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/09/whatsapp-image-2024-09-30-at-23.49.10_209bee69.jpg\" alt=\"Mach-24 CanSat detail\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/whatsapp-image-2024-09-30-at-23.51.04_a752a64d.jpg\" alt=\"Mach-24 additional media\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022–2023",
+          "status": "published",
+          "summary": "Celebrating 9 months of dedicated efforts, Peryton Space proudly claimed the top spot in the Mach 23 1.5 km category. Our team executed a launch and recovery of our rocket, alongside the successful deployment and retrieval of our CanSat. The journey was nothing short of incredible, especially as we had the privilege of connecting with fellow student rocketry teams across the UK. Special appreciation goes out to GU Rocketry — despite our technical rivalry, your camaraderie added an extra layer of greatness to the competition. We’re already looking forward to the next year, hoping to meet and collaborate with all the fantastic teams once again.",
+          "highlights": [
+            "Launch and recovery of the Mach-23 rocket",
+            "Successful CanSat deployment and retrieval",
+            "Strong links with other UK student rocketry teams"
+          ],
+          "awards": ["1st place — Mach 23 1.5 km category"],
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": { "text": "Rocket", "level": 2 }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>Launch vehicle aimed at an apogee close to 1500 m, demonstrating space-based solar power transmission with onboard solar panels.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/img_6259-1.jpg\" alt=\"Mach-23 rocket\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/d0bb057b-0b4a-4c9f-bc47-d1e8828e1a08-1.jpg\" alt=\"Mach-23 build\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/829c29b6-3484-44ff-bbd3-91b223953e31-1.jpg\" alt=\"Mach-23 airframe\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/11b4a92d-5ba4-42c1-bd57-df8cbe60bf67-1.jpg\" alt=\"Mach-23 detail\" loading=\"lazy\" /></figure><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2023/11/photo-2023-11-17-12-15-55.jpg\" alt=\"Mach-23 competition day\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2023/11/photo-2023-11-17-12-16-04-1.jpg\" alt=\"Mach-23 competition day\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2023/11/photo-2023-11-17-12-16-02.jpg\" alt=\"Mach-23 competition day\" loading=\"lazy\" /></figure>"
+              }
+            },
+            {
+              "type": "heading",
+              "props": { "text": "CanSat", "level": 2 }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>The CanSat collected flight data and simulated harnessing energy from space with a solar-powered radio circuit transmitting live telemetry to the ground station. Onboard: pressure and temperature sensors for altitude, IMU and GPS for tracking, and deployable tape-measure antennas for the radio.</p><p>Two computers: a Teensy 4.0 for sensor data and storage, and an ESP32 for radio transmit. Dual pressure sensors for redundancy with four LM75 temperature sensors per PCB layer; MPU-6500 IMU; Neo-6M GPS. The ESP32 ran from a LiPo charging circuit powered by a side-mounted solar panel.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/img_6211.jpg\" alt=\"Mach-23 CanSat\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/9933b4f0-2ca5-4788-a245-feccc622277c-1.jpg\" alt=\"Mach-23 CanSat avionics\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/d76e15a7-baa6-4a1f-9f23-eec4dc946aec-1.jpg\" alt=\"Mach-23 CanSat assembly\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/img_6212.jpg\" alt=\"Mach-23 additional\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/9ab99c13-620a-46b3-a242-b7da830c05de.jpg\" alt=\"Mach-23 media\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/52ca20db-99bf-49c8-a356-402efddc085c.jpg\" alt=\"Mach-23 team\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "race2space",
+      "group": "launch",
+      "navLabel": "Race2Space",
+      "hubSlug": "race2space",
+      "title": "Race2Space",
+      "introHtml": "<p>Peryton Space joined <a href=\"https://www.racetospace.org.uk/\" rel=\"noopener noreferrer\" target=\"_blank\">Race2Space</a>, a national education initiative to strengthen the UK space sector through hands-on learning. Students solve real engineering problems by designing, manufacturing, and testing rocket engines — building skills the industry needs and aligning with the National Space Policy goal of capturing 10% of the global space market by 2030.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/logo-01-removebg-preview.png\" alt=\"Race2Space logo\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": { "text": "PHYRE (Peryton Hybrid Rocket Engine)", "level": 2 }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>The PHYRE cold-flow test successfully used liquid nitrous oxide (N₂O) at pressures up to 50 bar, surpassing initial projections. A significant leak at the igniter port highlighted needed design improvements before integrating with the combustion chamber. The team is preparing for the hot-fire test of PHYRE V1 while handing over to new members for the next cycle.</p>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "published",
+          "summary": "PHYRE (Peryton Hybrid Rocket Engine) cold-flow testing with liquid N₂O up to 50 bar. Igniter-port leak informed design changes ahead of combustion-chamber integration and the planned hot-fire of PHYRE V1, with knowledge transfer to the next cohort.",
+          "highlights": [
+            "Cold-flow test to 50 bar N₂O",
+            "Igniter-port leak identified for redesign",
+            "Hot-fire of PHYRE V1 in preparation; team handover underway"
+          ],
+          "awards": [],
+          "intake": "race2space-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "l4c",
+      "group": "launch",
+      "navLabel": "Launch4Change",
+      "hubSlug": "launch4change",
+      "title": "Launch4Change",
+      "introHtml": "<p>Organised by Durham University and funded by the Advanced Research and Invention Agency (ARIA), Launch4Change is a high-powered rocketry competition between a selection of 10 universities. Teams build a high-powered rocket allowed to reach up to 8 km in altitude, plus a climate R&amp;D payload.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2025/11/l4c-2.png\" alt=\"Launch4Change\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": { "text": "Get involved", "level": 2 }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Interested in joining the next Launch4Change cycle? Reach out via the <a href=\"/contact-us/\">contact form</a> or society channels. Workshop resources for peers live in the <a href=\"/member-zone/\">Member Zone</a>.</p>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "summary": "Proper year write-up TBD — intake: Launch4Change section.",
+          "highlights": [],
+          "awards": [],
+          "intake": "l4c-2024-2025"
+        }
+      ]
+    }
+  ],
+  "intake": {
+    "nrc-2024-2025": { "label": "NRC 2024–2025", "owner": "Severin", "done": false },
+    "nrc-2023-2024": { "label": "NRC 2023–2024", "owner": "Severin", "done": true, "note": "Folded from draft-nrc-2023-2024 (2023–2024 section only)." },
+    "mach-2024-2025": { "label": "Mach-X 2024–2025", "owner": "Severin", "done": false },
+    "mach-2023-2024": { "label": "Mach-X / Mach-24", "owner": "Severin", "done": true, "note": "Folded from draft-mach-x Mach-24 write-up." },
+    "race2space-2024-2025": { "label": "Race2Space update", "owner": "Severin", "done": true, "note": "Hub + PHYRE from draft-race2space." },
+    "iosm-2023-2024": { "label": "IOSM 2024 win (STELLAR)", "owner": "Severin", "done": true, "note": "Folded from draft IOSM page." },
+    "l4c-2024-2025": { "label": "Launch4Change year campaign", "owner": "Severin", "done": false, "note": "Hub copy folded from scrape; year outcome still TBD." },
+    "sdc-2024-2025": { "label": "SDC 2024–2025 (+ Best Innovation)", "owner": "Severin", "done": false },
+    "sdc-2023-2024": { "label": "SDC 2023–2024", "owner": "Severin", "done": false },
+    "sdc-2022-2023": { "label": "SDC 2022–2023 (D.A.V.E win)", "owner": "fold-in", "done": true, "note": "Folded from /satellite-design-competition/ scrape." },
+    "nrc-draft-radiation": {
+      "label": "NRC draft radiation-payload blurb",
+      "owner": "Severin",
+      "done": false,
+      "note": "Present under misaligned year heading in draft-nrc-2023-2024 — confirm year before publishing; do not overwrite 2021–2023 published years."
+    },
+    "space-uncertain": {
+      "label": "Confirm Space / other uncertain pages",
+      "owner": "Severin",
+      "done": false,
+      "deferred": true,
+      "note": "Meeting: Space not certain — deferred until confirmed."
+    }
+  }
+}

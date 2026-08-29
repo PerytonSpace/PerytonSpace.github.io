@@ -1,0 +1,34 @@
+{
+  "slug": "team/wellbeing",
+  "title": "Wellbeing Champions",
+  "status": "placeholder",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Wellbeing champions",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>If you need support, you can reach a wellbeing champion. Personal phone numbers and emails are <strong>not</strong> listed here — ask via society channels, or use University / SU wellbeing resources.</p>"
+      }
+    },
+    {
+      "type": "personGrid",
+      "props": {
+        "source": "team.wellbeing"
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "University wellbeing (SU)",
+        "href": "https://www.ussu.co.uk/",
+        "external": true
+      }
+    }
+  ]
+}

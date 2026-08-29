@@ -1,0 +1,37 @@
+{
+  "supervisors": [
+    {
+      "name": "Chris",
+      "role": "Academic Supervisor",
+      "linkedin": null,
+      "note": "Full name/title to be confirmed before deploy."
+    },
+    {
+      "name": "Andrew",
+      "role": "Academic Supervisor",
+      "linkedin": null,
+      "note": "Listing assumed OK pending reply; confirm before deploy."
+    }
+  ],
+  "wellbeing": [
+    {
+      "name": "Placeholder",
+      "role": "Wellbeing Champion",
+      "linkedin": null,
+      "note": "Replace with current champions before deploy. Contact details on request via society channels \u2014 not listed publicly here."
+    }
+  ],
+  "historicalCommittees": [
+    {
+      "year": "2025-2026",
+      "href": "/committee-2025-2026/",
+      "label": "Committee 2025\u20132026",
+      "current": true
+    },
+    {
+      "year": "2023-2024",
+      "href": "/committee-2023-2024/",
+      "label": "Committee 2023\u20132024"
+    }
+  ]
+}

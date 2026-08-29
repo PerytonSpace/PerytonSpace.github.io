@@ -1,0 +1,26 @@
+{
+  "slug": "committee-2025-2026",
+  "title": "Committee 2025\u20132026",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Committee 2025\u20132026",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Committee members for this year. LinkedIn links are opt-in \u2014 ask before adding.</p>"
+      }
+    },
+    {
+      "type": "personGroups",
+      "props": {
+        "source": "team.rosters.committee-2025-2026"
+      }
+    }
+  ]
+}

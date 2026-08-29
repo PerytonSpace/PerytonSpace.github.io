@@ -1,0 +1,26 @@
+{
+  "slug": "committee-2023-2024",
+  "title": "Committee 2023\u20132024",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Committee 2023\u20132024",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Committee members for this year. LinkedIn links are opt-in \u2014 ask before adding.</p>"
+      }
+    },
+    {
+      "type": "personGroups",
+      "props": {
+        "source": "team.rosters.committee-2023-2024"
+      }
+    }
+  ]
+}

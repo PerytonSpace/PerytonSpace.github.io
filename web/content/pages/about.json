@@ -1,0 +1,33 @@
+{
+  "slug": "about",
+  "title": "About Us",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "About Us",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Peryton Space is a student-led rocketry and space society at the University of Surrey. Passionate about space exploration and education, and we are committed to developing projects and inspiring the next generation of aerospace engineers or space engineers who will work in the space sector.</p><p>Our team consists of students from a variety of disciplines, including engineering, physics, mathematics, among others. We design, build, and launch rockets, and also develop new technologies for the space industry, such as space-based electronics and satellite systems.</p><p>We are also committed to inspiring the next generation of space engineers. We run a variety of outreach programs, including workshops, talks, and demonstrations.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/829c29b6-3484-44ff-bbd3-91b223953e31-3.jpg\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/microsoftteams-image-2.jpg\" alt=\"\" loading=\"lazy\" /></figure>"
+      }
+    },
+    {
+      "type": "heading",
+      "props": {
+        "text": "Innovation",
+        "level": 2
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Peryton Space is one of the only student-led rocketry and space societies in the UK. Our recent wins are a testament to our hard work and dedication, and we are excited to continue building on our success.</p><p>Our innovative projects are helping to advance the interest of space engineering within the University and outside of the University. We are also helping to promote STEM education and to inspire the next generation of space engineers.</p><p>Peryton Space is a valuable asset to the University of Surrey. We are helping to put Surrey on the map as a leading centre for space research and education.</p>"
+      }
+    }
+  ]
+}

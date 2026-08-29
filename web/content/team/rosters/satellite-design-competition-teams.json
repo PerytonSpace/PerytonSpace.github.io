@@ -1,0 +1,43 @@
+{
+  "title": "Satellite Design Competition Teams",
+  "status": "published",
+  "groups": [
+    {
+      "members": [
+        {
+          "name": "Mya White",
+          "role": "Project Lead / Systems Engineer",
+          "photo": "/wp-content/uploads/2024/09/mya.jpeg",
+          "linkedin": null
+        },
+        {
+          "name": "Gabriel Zbirowksi-Acevedo",
+          "role": "Project Manager",
+          "linkedin": null
+        },
+        {
+          "name": "Terry Savva",
+          "role": "Head of Mechanical",
+          "photo": "/wp-content/uploads/2024/09/terry.jpeg",
+          "linkedin": null
+        },
+        {
+          "name": "Mowisha Srikuberan",
+          "role": "Mechanical Support",
+          "photo": "/wp-content/uploads/2024/09/mowii.jpeg",
+          "linkedin": null
+        },
+        {
+          "name": "Samuel Delaney",
+          "role": "Head of AOCS",
+          "linkedin": null
+        },
+        {
+          "name": "Ramees Najeeb",
+          "role": "Head of TT&C",
+          "linkedin": null
+        }
+      ]
+    }
+  ]
+}

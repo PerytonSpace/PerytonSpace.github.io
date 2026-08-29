@@ -1,0 +1,20 @@
+{
+  "slug": "satellite-design-competition-teams",
+  "title": "Satellite Design Competition Teams",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Satellite Design Competition Teams",
+        "level": 1
+      }
+    },
+    {
+      "type": "personGroups",
+      "props": {
+        "source": "team.rosters.satellite-design-competition-teams"
+      }
+    }
+  ]
+}

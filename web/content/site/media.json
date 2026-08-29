@@ -1,0 +1,15 @@
+{
+  "heroVideo": "/wp-content/uploads/2023/07/peryton-website-video-3.mp4",
+  "heroVideoFps": 30,
+  "heroVideoNote": "Swap heroVideo when a newer reel is ready. heroVideoAnnotations use startFrame (integer, 0-based) at heroVideoFps. Display form M:SS.FF = minutes : seconds : frame-within-second (FF 0–29). orientation: landscape | portrait — on mobile/portrait viewports, landscape = object-fit contain (full clip visible); portrait = height-fit (side padding already in-frame).",
+  "heroVideoAnnotations": [
+    { "startFrame": 0, "label": "Mach Launch cam", "orientation": "landscape" },
+    { "startFrame": 95, "label": "SDC winning entry", "orientation": "landscape" },
+    { "startFrame": 203, "label": "Race to Space cold flow test", "orientation": "landscape" },
+    { "startFrame": 443, "label": "Mach rocket assembly", "orientation": "landscape" },
+    { "startFrame": 526, "label": "Mach Launch Stand Cam", "orientation": "portrait" },
+    { "startFrame": 710, "label": "ORT Vibration testing", "orientation": "landscape" },
+    { "startFrame": 865, "label": "Mach Launch Wide Cam", "orientation": "portrait" },
+    { "startFrame": 1030, "label": "Mach recovery", "orientation": "portrait" }
+  ]
+}

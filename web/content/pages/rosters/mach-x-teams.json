@@ -1,0 +1,20 @@
+{
+  "slug": "mach-x-teams",
+  "title": "Mach-X Teams",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Mach-X Teams",
+        "level": 1
+      }
+    },
+    {
+      "type": "personGroups",
+      "props": {
+        "source": "team.rosters.mach-x-teams"
+      }
+    }
+  ]
+}

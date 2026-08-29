@@ -1,0 +1,20 @@
+{
+  "slug": "teamsdc",
+  "title": "Team Satellite Design Competition 2023",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Team Satellite Design Competition 2023",
+        "level": 1
+      }
+    },
+    {
+      "type": "personGroups",
+      "props": {
+        "source": "team.rosters.teamsdc"
+      }
+    }
+  ]
+}

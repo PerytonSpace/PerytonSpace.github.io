@@ -1,0 +1,26 @@
+{
+  "slug": "team/supervisors",
+  "title": "Academic Supervisors",
+  "status": "placeholder",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Academic supervisors",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Faculty contacts for the society. Details to be confirmed before public deploy.</p>"
+      }
+    },
+    {
+      "type": "personGrid",
+      "props": {
+        "source": "team.supervisors"
+      }
+    }
+  ]
+}

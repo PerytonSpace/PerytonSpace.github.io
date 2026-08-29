@@ -1,0 +1,52 @@
+{
+  "title": "Committee 2025\u20132026",
+  "status": "published",
+  "groups": [
+    {
+      "title": "Main Committee",
+      "members": [
+        {
+          "name": "Matt Cockfield-Hall",
+          "role": "President",
+          "photo": "/wp-content/uploads/2025/11/picture1.png",
+          "linkedin": null
+        },
+        {
+          "name": "Carys Burchell",
+          "role": "Vice-President",
+          "photo": "/wp-content/uploads/2025/11/picture2.png",
+          "linkedin": null
+        },
+        {
+          "name": "Severin Tretzmueller",
+          "role": "Treasurer",
+          "photo": "/wp-content/uploads/2025/11/picture4.png",
+          "linkedin": null
+        },
+        {
+          "name": "Caitlin Doutch",
+          "role": "VP Rocketry",
+          "photo": "/wp-content/uploads/2025/11/picture5.png",
+          "linkedin": null
+        }
+      ]
+    },
+    {
+      "title": "Wider Committee",
+      "members": [
+        {
+          "name": "Tommy Richards",
+          "role": "Head of Outreach",
+          "photo": "/wp-content/uploads/2025/11/tommy.png",
+          "linkedin": null
+        },
+        {
+          "name": "Mya White",
+          "role": "Social Sec",
+          "photo": "/wp-content/uploads/2025/12/mya.png",
+          "linkedin": null
+        }
+      ]
+    }
+  ]
+}

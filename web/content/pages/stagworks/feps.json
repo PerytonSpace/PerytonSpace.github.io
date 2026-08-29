@@ -1,0 +1,28 @@
+{
+  "slug": "stagworks/feps",
+  "title": "StagWorks — FEPS boards",
+  "status": "placeholder",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "FEPS boards",
+        "level": 1
+      }
+    },
+    {
+      "type": "placeholder",
+      "props": {
+        "title": "Coming into StagWorks",
+        "body": "Placeholder for power / protection circuit learning boards (e-fuses, regulators, etc.). Details when confirmed."
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Back to StagWorks",
+        "href": "/stagworks/"
+      }
+    }
+  ]
+}

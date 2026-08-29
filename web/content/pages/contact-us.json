@@ -1,0 +1,27 @@
+{
+  "slug": "contact-us",
+  "title": "Contact Us",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Contact us",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Feel free to reach out — we would appreciate hearing from you.</p><p>Duke of Kent Building, University of Surrey, 04DK00, Guildford, GU2 7TE, GB</p><p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=51.24268341064453,-0.5879362225532532\" rel=\"noopener noreferrer\" target=\"_blank\">University of Surrey on Google Maps</a></p>"
+      }
+    },
+    {
+      "type": "embedForm",
+      "props": {
+        "formEmbedUrl": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=kyaQa3QQqkCeIdiURqLrtU13fMDWn1lKk9I-knvOQF1UMkg2QU9OUjBCMkZJWVQyRlgzMVZOSVpJMy4u&embed=true",
+        "fallbackNote": "Contact form embed URL missing. Set <code>formEmbedUrl</code> in <code>web/content/pages/contact-us.json</code>, or use society social channels."
+      }
+    }
+  ]
+}

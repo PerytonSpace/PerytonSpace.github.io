@@ -1,0 +1,28 @@
+{
+  "slug": "stagworks/rf",
+  "title": "StagWorks — RF",
+  "status": "placeholder",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "RF experiments",
+        "level": 1
+      }
+    },
+    {
+      "type": "placeholder",
+      "props": {
+        "title": "Coming into StagWorks",
+        "body": "Placeholder for planned RF work outside competition budgets. Details when confirmed."
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Back to StagWorks",
+        "href": "/stagworks/"
+      }
+    }
+  ]
+}

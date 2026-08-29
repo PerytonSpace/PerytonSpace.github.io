@@ -1,0 +1,66 @@
+{
+  "title": "Team Satellite Design Competition 2023",
+  "status": "published",
+  "groups": [
+    {
+      "members": [
+        {
+          "name": "Ieuan Carney",
+          "role": "Systems Engineer and Team Lead",
+          "photo": "/wp-content/uploads/2023/09/image-5.png",
+          "linkedin": null,
+          "note": "I grew up in Dubai and represented them in Cricket"
+        },
+        {
+          "name": "Vishalya Kontham",
+          "role": "Projects Manager",
+          "photo": "/wp-content/uploads/2023/09/image-6.png",
+          "linkedin": null,
+          "note": "I grew up in 5 different countries and love dogs"
+        },
+        {
+          "name": "Charis (Harry) Sakellariou",
+          "role": "ADCS Lead",
+          "photo": "/wp-content/uploads/2023/09/image-8.png",
+          "linkedin": null,
+          "note": "When I was younger, I used to do Stand-up Comedy"
+        },
+        {
+          "name": "Vasu Chadeesingh",
+          "role": "TT&C Lead",
+          "photo": "/wp-content/uploads/2023/09/image-9.png",
+          "linkedin": null,
+          "note": "I mix music for a hobby"
+        },
+        {
+          "name": "Abigail Yetton",
+          "role": "Payload Lead",
+          "photo": "/wp-content/uploads/2023/09/image-10.png",
+          "linkedin": null,
+          "note": "I own all 50 years\u2019 worth Peanut Comics"
+        },
+        {
+          "name": "Miguel Escudero Munoz",
+          "role": "Mechanical Lead",
+          "photo": "/wp-content/uploads/2023/09/image-12.png",
+          "linkedin": null,
+          "note": "I can recite 50 Harry Potter spells from the top of my head"
+        },
+        {
+          "name": "Chamal Perrera",
+          "role": "EPS Lead",
+          "photo": "/wp-content/uploads/2023/09/image-13.png",
+          "linkedin": null,
+          "note": "I think Space Politics and Law is fun"
+        },
+        {
+          "name": "Anouk Ceuppens",
+          "role": "Software Lead",
+          "photo": "/wp-content/uploads/2023/09/image-14.png",
+          "linkedin": null,
+          "note": "I will be cycling from the North Sea to the Mediterranean this September"
+        }
+      ]
+    }
+  ]
+}

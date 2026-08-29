@@ -1,0 +1,27 @@
+{
+  "slug": "committee",
+  "title": "Historical Committees",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Committees",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Current and past committee years. LinkedIn links are opt-in \u2014 ask before adding.</p>"
+      }
+    },
+    {
+      "type": "yearList",
+      "id": "historical-committees",
+      "props": {
+        "source": "team.historicalCommittees"
+      }
+    }
+  ]
+}

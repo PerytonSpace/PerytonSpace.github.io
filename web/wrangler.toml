@@ -1,0 +1,4 @@
+# Cloudflare Pages — see .planning/docs/HOSTING.md
+name = "peryton-space"
+compatibility_date = "2026-08-08"
+pages_build_output_dir = "out"

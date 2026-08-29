@@ -1,0 +1,66 @@
+{
+  "slug": "opportunities",
+  "title": "Opportunities",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Opportunities",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Ways to get involved beyond competition teams. Reach out via <a href=\"/contact-us/\">Contact</a> if you want to help.</p>"
+      }
+    },
+    {
+      "type": "heading",
+      "props": {
+        "text": "Merch",
+        "level": 2
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/08/t-shirt.a.front_-1.png\" alt=\"Peryton Space merch\" loading=\"lazy\" /></figure><p>Society merchandise — ask via Contact for current stock and ordering (legacy WordPress merch form retired).</p>"
+      }
+    },
+    {
+      "type": "heading",
+      "props": {
+        "text": "Website design / update",
+        "level": 2
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/08/perytonspace.png\" alt=\"\" loading=\"lazy\" /></figure><p>Help keep the site accurate and useful — content edits happen in Git JSON; design feedback welcome through Contact.</p>"
+      }
+    },
+    {
+      "type": "heading",
+      "props": {
+        "text": "Social media",
+        "level": 2
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/08/perytonspace-1.png\" alt=\"\" loading=\"lazy\" /></figure><p>Contribute to Instagram / LinkedIn / other channels — ask the committee how to join the comms rota.</p>"
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Contact us",
+        "href": "/contact-us/"
+      }
+    }
+  ]
+}

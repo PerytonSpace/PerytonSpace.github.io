@@ -1,0 +1,38 @@
+{
+  "title": "Team NRC 2023",
+  "status": "published",
+  "groups": [
+    {
+      "members": [
+        {
+          "name": "Charlie Roe",
+          "role": "Team Lead",
+          "photo": "/wp-content/uploads/2023/09/image.png",
+          "linkedin": null,
+          "note": "I am a drummer in a band that has featured on BBC Introducing"
+        },
+        {
+          "name": "Rowan Standing",
+          "role": "Deputy Team Lead",
+          "photo": "/wp-content/uploads/2023/09/image-1.png",
+          "linkedin": null,
+          "note": "I am an amateur photographer, recently into a 35mm film photography"
+        },
+        {
+          "name": "Carys Burchell",
+          "role": "Head of Structures",
+          "photo": "/wp-content/uploads/2023/09/image-2.png",
+          "linkedin": null,
+          "note": "I lived in Shanghai for 2 1/2 years"
+        },
+        {
+          "name": "Pijus Kemeklis",
+          "role": "Head of Recovery",
+          "photo": "/wp-content/uploads/2023/09/image-4.png",
+          "linkedin": null,
+          "note": "I am an amateur skydiver!"
+        }
+      ]
+    }
+  ]
+}

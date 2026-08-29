@@ -1,0 +1,68 @@
+{
+  "slug": "member-zone",
+  "title": "Member Zone",
+  "status": "placeholder",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Member Zone",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Public resources for members and peer societies (e.g. NRC teams looking for workshop materials). No login required.</p><p><strong>Email and phone numbers</strong> for private access requests are available on request through society channels — they are not published on this page.</p>"
+      }
+    },
+    {
+      "type": "heading",
+      "props": {
+        "text": "Workshops & making",
+        "level": 2
+      }
+    },
+    {
+      "type": "placeholder",
+      "props": {
+        "title": "How we make and order things",
+        "body": "Process notes for workshops, materials, and ordering — copy TBD (Severin / ops)."
+      }
+    },
+    {
+      "type": "heading",
+      "props": {
+        "text": "Courses",
+        "level": 2
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Course information lives here (not under StagWorks), so people looking for training resources land in one place.</p>"
+      }
+    },
+    {
+      "type": "placeholder",
+      "props": {
+        "title": "Composites course",
+        "body": "Outline, who it’s for, and how to join — content TBD."
+      }
+    },
+    {
+      "type": "placeholder",
+      "props": {
+        "title": "Electronics course",
+        "body": "Outline, who it’s for, and how to join — content TBD."
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Contact us",
+        "href": "/contact-us/"
+      }
+    }
+  ]
+}

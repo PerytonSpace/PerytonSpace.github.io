@@ -1,0 +1,26 @@
+{
+  "slug": "sponsorships",
+  "title": "Sponsors / Partnerships",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Partners & sponsors",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>We work with partners who support student space engineering — through products, funding, and careers engagement.</p><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/logo_kunkunetransparentbackground.png\" alt=\"Kunkune\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/03/logo-4a2acc14e3f285ae0d75a4f45953f5d9.png\" alt=\"Easy Composites\" loading=\"lazy\" /></figure>"
+      }
+    },
+    {
+      "type": "tierList",
+      "props": {
+        "source": "sponsors"
+      }
+    }
+  ]
+}

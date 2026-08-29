@@ -1,0 +1,58 @@
+{
+  "title": "Committee 2023\u20132024",
+  "status": "published",
+  "groups": [
+    {
+      "title": "Committee",
+      "members": [
+        {
+          "name": "Tommy Richards",
+          "role": "President",
+          "photo": "/wp-content/uploads/2024/01/1644967006846.jpeg",
+          "linkedin": null
+        },
+        {
+          "name": "Charles Deebank",
+          "role": "VP Rocketry",
+          "photo": "/wp-content/uploads/2025/02/media-3-edited.jpg",
+          "linkedin": null
+        },
+        {
+          "name": "Elisavetha (Lizzie) Sergeev",
+          "role": "Treasurer",
+          "photo": "/wp-content/uploads/2024/02/lizzie.jpeg",
+          "linkedin": null
+        },
+        {
+          "name": "Ieuan Carney",
+          "role": "VP Stagworks",
+          "photo": "/wp-content/uploads/2024/01/1617133022829.jpeg",
+          "linkedin": null
+        },
+        {
+          "name": "Abi Yetton",
+          "role": "VP Satellites",
+          "photo": "/wp-content/uploads/2025/02/image.jpg",
+          "linkedin": null
+        },
+        {
+          "name": "Ricardo Cavalheiro",
+          "role": "VP of Marketing, Social Media and Website Design",
+          "photo": "/wp-content/uploads/2024/01/imagem11-1.png",
+          "linkedin": null
+        }
+      ]
+    },
+    {
+      "title": "Supervisor",
+      "members": [
+        {
+          "name": "Rob Siddall",
+          "role": "Faculty Supervisor",
+          "photo": "/wp-content/uploads/2024/02/rob.jpeg",
+          "linkedin": null
+        }
+      ]
+    }
+  ]
+}

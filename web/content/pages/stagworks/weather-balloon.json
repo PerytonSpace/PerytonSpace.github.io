@@ -1,0 +1,40 @@
+{
+  "slug": "weather-balloon-division",
+  "title": "Weather Balloon Project",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Weather Balloon Project",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/space2-1.png\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/space3-1.png\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/space-3.png\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/image001-3.png\" alt=\"\" loading=\"lazy\" /></figure><p>Peryton Space is working on creating a weather balloon to reach an altitude of 115,000 feet for various science experiments and payloads.</p>"
+      }
+    },
+    {
+      "type": "heading",
+      "props": {
+        "text": "Payloads",
+        "level": 2
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<ul><li><strong>2024 — Perovskite Solar Cells.</strong> We are planning to fly a payload to measure the effectiveness of Perovskite solar cells used in space-based applications.</li><li><strong>2023 — Pisa Flight.</strong> October 2023: Peryton Space visited the University of Pisa as part of dissertation research on “Testing Perovskite Solar Cells for Space-based Applications.” The weather balloon test with attached Perovskite solar cells reached an apogee of approximately 105,000 ft and was successfully recovered. Subsequent weeks were dedicated to analysing the results. Thanks to Jae Sung Yun for entrusting the mission to the team. Knowledge from this test is expected to inform future weather balloon projects with Peryton Space.</li></ul><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/university_of_pisa.svg_.png\" alt=\"University of Pisa\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/wide-balloon.jpg\" alt=\"\" loading=\"lazy\" /></figure>"
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Back to StagWorks",
+        "href": "/stagworks/"
+      }
+    }
+  ]
+}

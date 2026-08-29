@@ -1,0 +1,5 @@
+/* DEBUG: element outlines — disable via DEBUG_OUTLINES=False in serve.py */
+
+* {
+  outline: 1px solid hsla(210, 100%, 60%, 0.45) !important;
+}

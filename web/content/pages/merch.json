@@ -1,0 +1,34 @@
+{
+  "slug": "merch",
+  "title": "Merch",
+  "status": "published",
+  "sections": [
+    {
+      "type": "heading",
+      "props": {
+        "text": "Merch",
+        "level": 1
+      }
+    },
+    {
+      "type": "richtext",
+      "props": {
+        "html": "<p>Society merchandise requests no longer use the old WordPress form. See <a href=\"/opportunities/\">Opportunities</a> or get in touch via Contact.</p>"
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Contact us",
+        "href": "/contact-us/"
+      }
+    },
+    {
+      "type": "cta",
+      "props": {
+        "label": "Opportunities",
+        "href": "/opportunities/"
+      }
+    }
+  ]
+}

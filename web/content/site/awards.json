@@ -1,0 +1,33 @@
+{
+  "title": "Highlights & wins",
+  "items": [
+    {
+      "id": "sdc-1st",
+      "competition": "Satellite Design Competition",
+      "result": "1st Place",
+      "year": "2022–2023",
+      "href": "/satellite-design-competition/2022-2023/"
+    },
+    {
+      "id": "sdc-innovation",
+      "competition": "Satellite Design Competition",
+      "result": "Best Innovation",
+      "year": "2024–2025",
+      "href": "/satellite-design-competition/2024-2025/"
+    },
+    {
+      "id": "mach-2022-2023",
+      "competition": "Mach-X",
+      "result": "1st place — 1.5 km category",
+      "year": "2022–2023",
+      "href": "/mach/2022-2023/"
+    },
+    {
+      "id": "nrc-2021-2022",
+      "competition": "National Rocketry Championship",
+      "result": "4th overall · 2nd highest apogee (925m)",
+      "year": "2021–2022",
+      "href": "/nationalrocketry/2021-2022/"
+    }
+  ]
+}

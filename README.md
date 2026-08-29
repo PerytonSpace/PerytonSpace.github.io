@@ -1,11 +1,28 @@
-[![Deploy Jekyll with GitHub Pages](https://github.com/PerytonSpace/PerytonSpace.github.io/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/PerytonSpace/PerytonSpace.github.io/actions/workflows/jekyll-gh-pages.yml)
+# Peryton Space website
 
-# PerytonSpace.github.io
+Public society site: Next.js static export in `web/`. Content is JSON in Git (see `.planning/docs/AUTHORING.md`).
 
-This repository is for the Github Pages site for Peryton Space, which is intended to contain technical information, instead of the normal [Peryton Space](https://peryton.space) site, which is for the non-technical audience. 
+This repository previously hosted the Jekyll projects site at [projects.peryton.space](https://projects.peryton.space). That history remains in git; `main` now carries the main website rebuild.
 
-It is available [here](https://projects.peryton.space).
+## Local
 
-## Contributing
+```bash
+cd web
+npm ci
+npm run dev
+```
 
-> **WARNING: This site is PUBLIC, so no secret/confidential material is to be uploaded.** 
+Open http://localhost:3000
+
+## Deploy
+
+GitHub Actions builds `web/` and publishes `web/out` to GitHub Pages on push to `main`.
+
+Cloudflare Pages (production domain `peryton.space`) is documented in `.planning/docs/HOSTING.md`.
+
+## What is not in git
+
+Unused WordPress scrape and the full `wp-content` media archive are gitignored. The site uses:
+
+- `web/content/scrape/pages.json` — leftover WP HTML fallback
+- `web/public/wp-content/` — curated uploads only (`npm run sync-media`)
