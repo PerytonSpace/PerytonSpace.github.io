@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T21:56:57.935Z",
+  "generatedAt": "2026-09-05T09:56:53.095Z",
   "pages": [
     {
       "slug": "home",
@@ -7,14 +7,6 @@
       "title": "Peryton Space",
       "content": "<div class=\"entry-content\">\n<figure class=\"wp-block-video wp-block-embed is-type-video is-provider-videopress\"><div class=\"wp-block-embed__wrapper\">\nhttps://videopress.com/v/0kpvwZHD?resizeToParent=true&amp;cover=true&amp;preloadContent=metadata&amp;useAverageColor=true\n</div></figure>\n\n<p>Peryton Space</p>\n\n<p></p>\n</div>",
       "status": "draft",
-      "postType": "page"
-    },
-    {
-      "slug": "777878-2",
-      "path": "777878-2",
-      "title": "Linkedin",
-      "content": "<div class=\"entry-content\">\n<div class='sk-ww-linkedin-page-post'><a href=\"https://widgets.sociablekit.com/linkedin-page-posts/widget.js\">https://widgets.sociablekit.com/linkedin-page-posts/widget.js</a></div>\n\n<div class='sk-ww-linkedin-page-post'><a href=\"https://widgets.sociablekit.com/linkedin-page-posts/widget.js\">https://widgets.sociablekit.com/linkedin-page-posts/widget.js</a></div>\n</div>",
-      "status": "publish",
       "postType": "page"
     },
     {
@@ -170,14 +162,6 @@
       "postType": "page"
     },
     {
-      "slug": "satellite",
-      "path": "satellite",
-      "title": "Satellite",
-      "content": "<div class=\"entry-content\">\n<!-- empty -->\n\n</div>",
-      "status": "publish",
-      "postType": "page"
-    },
-    {
       "slug": "satellite-design-competition",
       "path": "satellite-design-competition",
       "title": "Satellite Design Competition",
@@ -243,7 +227,6 @@
     }
   ],
   "pathToSlug": {
-    "777878-2": "777878-2",
     "about": "about",
     "committee-2023-2024-copy": "committee-2023-2024-copy",
     "committee-2023-2024": "committee-2023-2024",
@@ -265,7 +248,6 @@
     "race2space": "race2space",
     "satellite-design-competition-teams": "satellite-design-competition-teams",
     "satellite-design-competition": "satellite-design-competition",
-    "satellite": "satellite",
     "sponsorships": "sponsorships",
     "stagworks": "stagworks",
     "teammach23": "teammach23",

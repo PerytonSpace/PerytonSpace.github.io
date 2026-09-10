@@ -2,7 +2,7 @@
 
 Public society site: Next.js static export in `web/`. Content is JSON in Git (see `.planning/docs/AUTHORING.md`).
 
-GitHub: [PerytonSpace/website](https://github.com/PerytonSpace/website). Separate from the Jekyll projects site in [PerytonSpace.github.io](https://github.com/PerytonSpace/PerytonSpace.github.io).
+GitHub: [PerytonSpace/website](https://github.com/PerytonSpace/website) and [PerytonSpace.github.io](https://github.com/PerytonSpace/PerytonSpace.github.io) (same site; org Pages is the root URL).
 
 ## Local
 
@@ -16,7 +16,7 @@ Open http://localhost:3000
 
 ## Deploy
 
-GitHub Actions builds `web/` and publishes `web/out` to GitHub Pages on push to `main`: [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/).
+GitHub Actions builds `web/` and publishes `web/out` to GitHub Pages on push to `main`: [https://perytonspace.github.io/](https://perytonspace.github.io/) (org repo) and [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/) (`website` repo).
 
 Cloudflare Pages (production domain `peryton.space`) is documented in `.planning/docs/HOSTING.md`.
 

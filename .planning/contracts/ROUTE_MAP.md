@@ -6,6 +6,8 @@
 
 ## Burger nav (live)
 
+Collapsed rail icons (left): Home · Launch · Missions · StagWorks · Our Team · About · Member Zone · Contact. Expanded rail is the tree below.
+
 ```text
 [Logo → /]   (home affordance in frosted header bar)
 Launch ▾
@@ -28,14 +30,14 @@ Our Team ▾
   Wellbeing Champions            → /team/wellbeing
 Mission team archives (linked from missions, not burger):
   /teammach23 · /teamsdc · /mach-x-teams · /satellite-design-competition-teams
-  (all structured via team/rosters + pages/rosters)
+  (all structured via content.json team.rosters + pages[])
 About ▾
   Who We Are                     → /about
   Ethos                          → /about#ethos
 Member Zone                      → /member-zone
 Contact ▾
   Contact Us                     → /contact-us
-  Sponsors / Partnerships        → /sponsorships  (omitted if sponsors.json empty)
+  Sponsors / Partnerships        → /sponsorships  (omitted if content.json sponsors empty)
 ```
 
 ## Homepage snap slides (live)
@@ -54,9 +56,8 @@ Controls: ↑/↓, dots, wheel threshold, arrow keys. Site footer hidden on home
 
 | Rule | Spec |
 |------|------|
-| Menu | Left burger; drawer portaled to `document.body` |
-| Header | Transparent + `backdrop-filter` blur (colourless frost) |
-| Home | **Logo** in header bar links `/` (text Home control removed by design) |
+| Menu | Persistent left rail only (no top bar / burger). Hover or tap expands; click page collapses. Collapsed = logo + section icons; expanded = sidebar tree |
+| Home | **Logo** at top of the left rail goes to `/` and the hero video slide |
 | Ethos | Under About (`#ethos`), not homepage hero |
 | Activities IA | Same grouping as burger: Launch, Missions, StagWorks |
 | Multi-year comps | Year children in hover/focus flyout (nav + home); hub pages still list years |
@@ -85,6 +86,8 @@ type NavItemStatus = "live" | "comingSoon";
 | `/draft-race2space` | `/race2space` |
 | `/draft-ukseds-in-orbit-servicing-and-manufacturing` | `/ukseds-in-orbit-servicing-and-manufacturing` |
 | `/committee-2023-2024-copy` | `/committee-2025-2026` |
+| `/satellite` · `/satellite-2` | `/satellite-design-competition` |
+| `/777878-2` | 404 (LinkedIn widget stub) |
 
 ## Fallback scrape routes
 

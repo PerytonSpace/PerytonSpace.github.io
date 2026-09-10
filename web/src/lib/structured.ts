@@ -1,36 +1,4 @@
-import about from "../../content/pages/about.json";
-import contactUs from "../../content/pages/contact-us.json";
-import memberZone from "../../content/pages/member-zone.json";
-import merch from "../../content/pages/merch.json";
-import opportunities from "../../content/pages/opportunities.json";
-import sponsorships from "../../content/pages/sponsorships.json";
-import committeeIndex from "../../content/pages/committee/index.json";
-import committee20232024 from "../../content/pages/committee/2023-2024.json";
-import committee20252026 from "../../content/pages/committee/2025-2026.json";
-import committee20262027 from "../../content/pages/committee/2026-2027.json";
-import teamSupervisors from "../../content/pages/team/supervisors.json";
-import teamWellbeing from "../../content/pages/team/wellbeing.json";
-import stagworks from "../../content/pages/stagworks/index.json";
-import weatherBalloon from "../../content/pages/stagworks/weather-balloon.json";
-import stagworksRf from "../../content/pages/stagworks/rf.json";
-import stagworksComposites from "../../content/pages/stagworks/composites.json";
-import stagworksFeps from "../../content/pages/stagworks/feps.json";
-import rosterNrc2023 from "../../content/pages/rosters/nrc-2023.json";
-import rosterTeamMach23 from "../../content/pages/rosters/teammach23.json";
-import rosterTeamSdc from "../../content/pages/rosters/teamsdc.json";
-import rosterMachXTeams from "../../content/pages/rosters/mach-x-teams.json";
-import rosterSdcTeams from "../../content/pages/rosters/satellite-design-competition-teams.json";
-
-import teamIndex from "../../content/team/index.json";
-import rosterDataCommitteeCurrent from "../../content/team/rosters/committee-2026-2027.json";
-import rosterDataCommittee20252026 from "../../content/team/rosters/committee-2025-2026.json";
-import rosterDataCommittee20232024 from "../../content/team/rosters/committee-2023-2024.json";
-import rosterDataTeamMach23 from "../../content/team/rosters/teammach23.json";
-import rosterDataTeamSdc from "../../content/team/rosters/teamsdc.json";
-import rosterDataMachXTeams from "../../content/team/rosters/mach-x-teams.json";
-import rosterDataSdcTeams from "../../content/team/rosters/satellite-design-competition-teams.json";
-import rosterDataNrc2023 from "../../content/team/rosters/nrc-2023.json";
-
+import { catalog } from "@/lib/catalog";
 import type { StructuredPage } from "@/lib/content-types";
 import { getMissionStructuredPages, resolveMissionYears } from "@/lib/missions";
 import { getSponsors, hasSponsorsContent } from "@/lib/sponsors";
@@ -41,51 +9,16 @@ export type {
   StructuredSection,
 } from "@/lib/content-types";
 
-const shellPages: StructuredPage[] = [
-  about,
-  contactUs,
-  memberZone,
-  merch,
-  opportunities,
-  sponsorships,
-  committeeIndex,
-  committee20262027,
-  committee20252026,
-  committee20232024,
-  teamSupervisors,
-  teamWellbeing,
-  stagworks,
-  weatherBalloon,
-  stagworksRf,
-  stagworksComposites,
-  stagworksFeps,
-  rosterNrc2023,
-  rosterTeamMach23,
-  rosterTeamSdc,
-  rosterMachXTeams,
-  rosterSdcTeams,
-] as StructuredPage[];
-
 /** Shell pages first; mission hubs/years override scrape for same slugs. */
 const structuredPages: StructuredPage[] = [
-  ...shellPages,
+  ...(catalog.pages as StructuredPage[]),
   ...getMissionStructuredPages(),
 ];
 
 const byPath = new Map(structuredPages.map((p) => [p.slug, p]));
 
 /** Legacy scrape / WP slugs → canonical structured pages. */
-const STRUCTURED_ALIASES: Record<string, string> = {
-  contact: "contact-us",
-  "nrc-2": "nationalrocketry",
-  competitions: "mach/2022-2023",
-  "draft-mach-x": "mach/2023-2024",
-  "draft-nrc-2023-2024": "nationalrocketry/2023-2024",
-  "draft-race2space": "race2space",
-  "draft-ukseds-in-orbit-servicing-and-manufacturing":
-    "ukseds-in-orbit-servicing-and-manufacturing",
-  "committee-2023-2024-copy": "committee-2025-2026",
-};
+const STRUCTURED_ALIASES: Record<string, string> = { ...catalog.aliases };
 
 export function getStructuredPage(routePath: string): StructuredPage | undefined {
   const normalized = routePath.replace(/^\/|\/$/g, "");
@@ -132,28 +65,15 @@ export type HistoricalCommittee = {
   current?: boolean;
 };
 
-type TeamIndex = {
-  supervisors: TeamPerson[];
-  wellbeing: TeamPerson[];
-  historicalCommittees: HistoricalCommittee[];
-};
+const team = catalog.team;
 
-const team = teamIndex as TeamIndex;
-
-const rostersBySlug = new Map<string, TeamRoster>([
-  ["committee-2026-2027", rosterDataCommitteeCurrent as TeamRoster],
-  ["committee-2025-2026", rosterDataCommittee20252026 as TeamRoster],
-  ["committee-2023-2024", rosterDataCommittee20232024 as TeamRoster],
-  ["teammach23", rosterDataTeamMach23 as TeamRoster],
-  ["teamsdc", rosterDataTeamSdc as TeamRoster],
-  ["mach-x-teams", rosterDataMachXTeams as TeamRoster],
-  ["satellite-design-competition-teams", rosterDataSdcTeams as TeamRoster],
-  ["nrc-2023", rosterDataNrc2023 as TeamRoster],
-]);
+const rostersBySlug = new Map<string, TeamRoster>(
+  Object.entries(team.rosters) as [string, TeamRoster][],
+);
 
 export function resolvePersonSource(source: string): TeamPerson[] {
-  if (source === "team.supervisors") return team.supervisors;
-  if (source === "team.wellbeing") return team.wellbeing;
+  if (source === "team.supervisors") return team.supervisors as TeamPerson[];
+  if (source === "team.wellbeing") return team.wellbeing as TeamPerson[];
   return [];
 }
 
@@ -166,7 +86,7 @@ export function resolvePersonGroups(source: string): PersonGroup[] {
 
 export function resolveYearListSource(source: string): HistoricalCommittee[] {
   if (source === "team.historicalCommittees") {
-    return team.historicalCommittees;
+    return team.historicalCommittees as HistoricalCommittee[];
   }
   return [];
 }
@@ -176,7 +96,7 @@ export { resolveMissionYears };
 export type SponsorTierView = {
   id: string;
   title: string;
-  entries: { name: string; blurb?: string }[];
+  entries: { name: string; blurb?: string; logo?: string }[];
 };
 
 export function resolveSponsorTiers(): SponsorTierView[] | null {
@@ -185,8 +105,8 @@ export function resolveSponsorTiers(): SponsorTierView[] | null {
   const asEntries = (arr: unknown[]) =>
     arr.map((item) => {
       if (typeof item === "string") return { name: item };
-      const o = item as { name?: string; blurb?: string };
-      return { name: o.name ?? "Partner", blurb: o.blurb };
+      const o = item as { name?: string; blurb?: string; logo?: string };
+      return { name: o.name ?? "Partner", blurb: o.blurb, logo: o.logo };
     });
   return [
     { id: "partnerships", title: "Partnerships", entries: asEntries(s.partnerships) },

@@ -60,7 +60,7 @@ See `.planning/REQUIREMENTS.md` (NAV-*, CONTENT-*, TEAM-*, HOST-*).
 | Incomplete comps grey + Coming soon | Avoid fake completeness | ✓ Good |
 | Empty sponsors JSON hides **nav** item | Empty tiers worse than absent | ✓ Good |
 | Logo as home control | Later design choice (replaced text Home) | ✓ Good |
-| Frosted header + body-portaled drawer | Blur chrome; fixed containing-block fix | ✓ Good |
+| No top bar; persistent left nav rail | Logo in rail = home; hover/tap expand, click page collapse | ✓ Good |
 | Snap homepage (5 slides) | Full-page storytelling | ✓ Good |
 | Activities = Launch/Missions/StagWorks | Match burger grouping | ✓ Good |
 | Style: interim `--ps-*` + wide shell | Full redesign deferred | ✓ Good |
@@ -71,10 +71,13 @@ See `.planning/REQUIREMENTS.md` (NAV-*, CONTENT-*, TEAM-*, HOST-*).
 | Multi-year comps: years on hover | Nav/home stay compact; hub pages keep year lists | ✓ Good |
 | Home brand intro once per load | One logo node: expand center → collapse to header | ✓ Good |
 | White text on black site-wide | Interim palette until full brand redesign | ✓ Good |
-| Draft WP write-ups → mission years | Fold master.md drafts into `missions/index.json`; alias `/draft-*` | ✓ Good |
+| Draft WP write-ups → mission years | Fold master.md drafts into `content.json` missions; alias `/draft-*` | ✓ Good |
+| One non-home content file | `web/content/content.json` derives pages, missions, team, sponsors, aliases | ✓ Good |
 | Year `extraSections` | Rich media/tech without pasted WP HTML | ✓ Good |
 | Style: globals over scrape | Tokens/fonts in globals; scrape.css subordinate; Space Mono via next/font | ✓ Good |
+| Comp galleries as carousels | Year/hub extraSection figures with 2+ images lift to `gallery` | ✓ Good |
 | Public coming-soon years | Incomplete years grey in menus; direct URL is a Coming soon shell (no JSON authoring copy) | ✓ Good |
+| Org Pages = this rebuild | `PerytonSpace.github.io` main replaced; Jekyll archived on `archive-jekyll-projects` | ✓ Good |
 
 ---
-*Last updated: 2026-08-29 — chrome hygiene; COMP-05 placeholder years*
+*Last updated: 2026-09-10 — org github.io hosts this rebuild*

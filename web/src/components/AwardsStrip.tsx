@@ -1,6 +1,7 @@
 import Link from "next/link";
 import awards from "../../content/site/awards.json";
 import { cardCoverClass, cardCoverStyle } from "@/lib/cardCover";
+import { publicAwardHref } from "@/lib/missions";
 
 type AwardItem = {
   id: string;
@@ -34,12 +35,13 @@ export function AwardsStrip() {
                 ) : null}
               </>
             );
+            const href = publicAwardHref(item.href);
             return (
               <li key={item.id} className="ps-awards-item">
-                {item.href ? (
+                {href ? (
                   <Link
                     className={`ps-awards-card ${cardCoverClass(item.coverImage)}`.trim()}
-                    href={item.href}
+                    href={href}
                     style={cardCoverStyle(item.coverImage)}
                   >
                     {body}

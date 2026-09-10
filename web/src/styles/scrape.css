@@ -27,7 +27,7 @@ img, video, svg { max-width: 100%; height: auto; }
 h1, h2, h3, h4, h5, h6,
 .wp-block-heading {
   font-family: var(--ps-font-heading);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--ps-heading);
   margin: 0 0 0.75em;
@@ -164,7 +164,7 @@ footer.wp-block-template-part {
   padding: 0.5rem 0.25rem;
   color: var(--ps-nav-text) !important;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none !important;
@@ -354,7 +354,7 @@ footer.wp-block-template-part {
 
 /* Homepage project grid links */
 .wp-block-column p a {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* ── Images & figures ───────────────────────────────────── */
@@ -404,7 +404,7 @@ input[type="submit"] {
   padding: 0.65em 1.4em;
   font-family: var(--ps-font-body);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   text-decoration: none !important;
   transition: background 0.15s ease, color 0.15s ease;
@@ -660,7 +660,7 @@ details.wp-block-details {
 
 .wp-block-details summary {
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--ps-heading);
 }
 

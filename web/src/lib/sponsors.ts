@@ -1,4 +1,4 @@
-import sponsorsData from "../../content/site/sponsors.json";
+import { catalog } from "@/lib/catalog";
 
 export type SponsorsFile = {
   partnerships: unknown[];
@@ -6,7 +6,7 @@ export type SponsorsFile = {
   tier2: unknown[];
 };
 
-const data = sponsorsData as SponsorsFile;
+const data = catalog.sponsors as SponsorsFile;
 
 /** Empty or missing sponsor lists ⇒ hide Sponsors nav/section entirely. */
 export function hasSponsorsContent(): boolean {

@@ -1,7 +1,7 @@
 # Style system
 
 **Status:** Interim layout + chrome — live  
-**Updated:** 2026-08-08 (new UI preferred over scrape; Space Mono via next/font)
+**Updated:** 2026-09-05 (Space Mono 400/700 only; leftover WP font classes stripped)
 
 ## Source of truth
 
@@ -48,14 +48,15 @@ Do **not** reintroduce a ~720px site-wide content column.
 | `--ps-font-body` | Space Mono (`next/font`) | Body + UI |
 | `--ps-font-heading` / `--ps-font-mono` | Space Mono | Headings + chrome |
 
+Only **400** and **700** are loaded. Do not use 500/600 (browsers fake those cuts). Leftover WP classes (`has-commissioner-font-family`, etc.) inherit Space Mono.
+
 Roboto / Google Fonts CSS runtime **removed**. Full brand redesign still deferred.
 
 ## Chrome
 
 | Surface | Spec |
 |---------|------|
-| Header | Dark frost + `backdrop-filter: blur(~14px)`; sticky; z above drawer |
-| Drawer | Portaled to `document.body`; dark panel; thin dark scrollbar |
+| Nav rail | Persistent left bar (no top chrome); logo = home; hover/tap expand, click page collapse; thin dark scrollbar when open |
 | Home snap | `100dvh` slides; `scroll-snap` proximity; fixed ↑/↓ chrome |
 | Footer | `.ps-footer` in globals (not WP footer classes) |
 

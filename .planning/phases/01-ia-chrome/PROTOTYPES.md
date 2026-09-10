@@ -8,7 +8,7 @@ export const headerPrototype: HeaderPrototype = "drawer"; // or "rail"
 
 | ID | Name | Behaviour |
 |----|------|-----------|
-| `drawer` | Left drawer (default) | Burger top-left; full-height panel portaled to `body`; logo = home |
+| `drawer` | Left rail (default) | Burger top-left; persistent rail (icons collapsed / sidebar expanded); logo = home |
 | `rail` | Compact rail | Shorter bar; smaller logo; tagline on wide screens |
 
 Both include: **logo as home**, nested nav, grey **Coming soon** items with hover tip, sponsors omitted when `sponsors.json` empty, frosted transparent header.

@@ -7,20 +7,16 @@
 
 | Change | File |
 |--------|------|
-| Mission hubs / years / intake | `web/content/missions/index.json` |
-| Awards | `web/content/site/awards.json` |
+| All non-home structured content | `web/content/content.json` |
+| Awards (home only) | `web/content/site/awards.json` |
 | Homepage video + cues | `web/content/site/media.json` |
-| Sponsors (empty ⇒ hide from **nav**) | `web/content/site/sponsors.json` |
-| Supervisors / wellbeing / committee index | `web/content/team/index.json` |
-| Roster people | `web/content/team/rosters/<slug>.json` |
-| Shell pages (About, Member Zone, contact, …) | `web/content/pages/**/*.json` |
-| Nav / header prototype | `web/src/lib/site.ts` |
+| Nav | `web/src/lib/site.ts` |
 | Legacy scraped HTML | `web/content/scrape/pages.json` (regen via `npm run prepare-content`) |
 | WP.com content archive (WXR) | `exports/perytonspace.WordPress.2026-08-08.xml` |
 | Parsed WXR dump (all items) | `exports/wxr/` — re-run `python3 exports/extract_wxr.py` |
 | Media (video, photos) | `web/public/wp-content/uploads/` — URLs in WXR, bytes downloaded separately |
 
-Structured routes **override** scrape for the same slug. Register new page/roster JSON imports in `web/src/lib/structured.ts`.
+Structured routes **override** scrape for the same slug. Add new pages to `content.json` `pages[]` (and people to `team`); no extra TypeScript import.
 
 **Note:** WordPress export XML is content/metadata only (~1.5 MB). Large assets (e.g. homepage video ~40 MB) were never in that file — keep the mirrored uploads tree as the media source of truth.
 

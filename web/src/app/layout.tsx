@@ -38,6 +38,9 @@ export default function RootLayout({
     <html lang="en" className={spaceMono.variable}>
       <body>
         <div className="wp-site-blocks">
+          <a className="ps-skip-link" href="#wp--skip-link--target">
+            Skip to content
+          </a>
           <SiteHeader />
           {children}
           <SiteFooter />

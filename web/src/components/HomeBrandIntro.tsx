@@ -27,7 +27,7 @@ type Props = {
 function headerLogoEl(): HTMLElement | null {
   return (
     document.getElementById("ps-header-logo") ??
-    document.querySelector<HTMLElement>(".ps-header .ps-logo")
+    document.querySelector<HTMLElement>(".ps-nav-logo .ps-logo")
   );
 }
 

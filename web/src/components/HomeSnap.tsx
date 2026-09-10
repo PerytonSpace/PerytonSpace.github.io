@@ -16,9 +16,11 @@ import {
   getHeroVideo,
   getHeroVideoAnnotations,
   getHeroVideoFps,
+  HOME_TOP_EVENT,
   isOrientationBoundary,
   type ClipOrientation,
 } from "@/lib/home";
+import { publicAwardHref } from "@/lib/missions";
 import { hasSponsorsContent, getSponsors } from "@/lib/sponsors";
 import {
   getActivityNavGroups,
@@ -428,8 +430,17 @@ export function HomeSnap() {
     };
   }, [goTo]);
 
+  useEffect(() => {
+    const onHomeTop = () => goTo(0);
+    window.addEventListener(HOME_TOP_EVENT, onHomeTop);
+    return () => window.removeEventListener(HOME_TOP_EVENT, onHomeTop);
+  }, [goTo]);
+
   return (
-    <div className={`ps-snap${introDone ? "" : " ps-snap--intro"}`}>
+    <div
+      id="wp--skip-link--target"
+      className={`ps-snap${introDone ? "" : " ps-snap--intro"}`}
+    >
       <HomeBrandIntro
         onReveal={onBrandIntroReveal}
         onComplete={onBrandIntroComplete}
@@ -539,12 +550,13 @@ export function HomeSnap() {
                   <span className="ps-awards-year">{item.year}</span>
                 </>
               );
+              const href = publicAwardHref(item.href);
               return (
                 <li key={item.id} className="ps-awards-item">
-                  {item.href ? (
+                  {href ? (
                     <Link
                       className={`ps-awards-card ${cardCoverClass(item.coverImage)}`.trim()}
-                      href={item.href}
+                      href={href}
                       style={cardCoverStyle(item.coverImage)}
                     >
                       {body}
@@ -588,7 +600,7 @@ export function HomeSnap() {
                   list.length ? (
                     <section key={title} className="ps-tier">
                       <h3 className="ps-tier-title">{title}</h3>
-                      <ul>
+                      <ul className="ps-sponsor-grid">
                         {list.map((item, i) => {
                           const name =
                             typeof item === "string"
@@ -596,13 +608,31 @@ export function HomeSnap() {
                               : String(
                                   (item as { name?: string }).name ?? "Partner",
                                 );
-                          return <li key={`${name}-${i}`}>{name}</li>;
+                          const logo =
+                            typeof item === "string"
+                              ? undefined
+                              : (item as { logo?: string }).logo;
+                          return (
+                            <li key={`${name}-${i}`} className="ps-sponsor-card">
+                              {logo ? (
+                                <img
+                                  className="ps-sponsor-logo"
+                                  src={withBase(logo)}
+                                  alt=""
+                                />
+                              ) : null}
+                              <strong>{name}</strong>
+                            </li>
+                          );
                         })}
                       </ul>
                     </section>
                   ) : null,
                 )}
               </div>
+              <p className="ps-cta">
+                <Link href="/sponsorships/">Partners &amp; sponsors</Link>
+              </p>
             </>
           ) : (
             <>

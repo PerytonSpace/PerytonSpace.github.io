@@ -7,12 +7,12 @@
 
 ### Navigation & chrome
 
-- [x] **NAV-01**: User can open a left burger (or equivalent) menu on desktop and mobile
-- [x] **NAV-02**: User can return home via the header logo (affordance; text Home control removed by design)
+- [x] **NAV-01**: User can open the left nav rail (hover / tap; no burger)
+- [x] **NAV-02**: User can return home via the rail logo (hero video slide)
 - [x] **NAV-03**: Nav exposes Launch, Missions, StagWorks, Our Team, About, Contact, Member Zone, Sponsors/Partnerships
 - [x] **NAV-04**: Missions (esp. Satellite Design) can be browsed by year / evolution path
 - [x] **NAV-05**: Committee can review ≥2 header/home prototypes before one is locked
-- [x] **NAV-06**: Header is colourless frosted (`backdrop-filter`); drawer portaled outside header
+- [x] **NAV-06**: No top bar; frosted left rail; expand on hover/tap, collapse by clicking the page
 - [x] **HOME-SNAP-01**: Homepage is 5 snappable full-viewport slides (video, activities, achievements, sponsors, connect)
 - [x] **HOME-SNAP-02**: Activities slide uses burger groupings (Launch / Missions / StagWorks)
 
@@ -66,7 +66,7 @@
 
 ### Content system & ops
 
-- [x] **CMS-01**: New/updated structured pages editable via JSON (or schema-backed files) in Git
+- [x] **CMS-01**: New/updated structured pages editable via JSON in Git (`web/content/content.json`)
 - [x] **CMS-02**: Schema documents fields so Severin can edit without inventing HTML
 - [x] **HOST-01**: Hosting approach chosen, documented, and locally smoke-tested (Cloudflare Pages; prod deploy human)
 - [x] **HOST-02**: Domain/WordPress cutover plan written (DNS, ownership, when to switch)

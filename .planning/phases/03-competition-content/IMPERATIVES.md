@@ -20,7 +20,7 @@
 
 ## Content intake checklist (Severin)
 
-Tracked in [INTAKE.md](./INTAKE.md) and `web/content/missions/index.json` → `intake`.
+Tracked in [INTAKE.md](./INTAKE.md) and `web/content/content.json` → `intake`.
 
 - [ ] NRC updates (2 years)
 - [ ] Mach updates (1 year)

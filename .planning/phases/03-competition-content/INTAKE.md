@@ -1,6 +1,6 @@
 # Competition content intake (Severin)
 
-Edit copy in `web/content/missions/index.json`. Flip intake `done: true` when a year is filled; set year `status` to `"published"` when ready for deploy.
+Edit copy in `web/content/content.json` (`missions` / `intake`). Flip intake `done: true` when a year is filled; set year `status` to `"published"` when ready for deploy.
 
 | Key | Item | Done | Notes |
 |-----|------|------|-------|

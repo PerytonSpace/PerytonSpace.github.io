@@ -25,8 +25,11 @@ const QUERY_PATH_ALIASES = {
   "page_id=168": "",
 };
 
+const SKIP_EXACT = new Set(["777878-2", "satellite", "satellite-2"]);
+
 function shouldSkipSlug(slug, routePath) {
   if (SKIP_SLUG.test(slug) || SKIP_SLUG.test(routePath)) return true;
+  if (SKIP_EXACT.has(slug) || SKIP_EXACT.has(routePath)) return true;
   // Numeric id-only leftovers (id-169 etc.) unless they are real content pages
   if (/^id-\d+$/i.test(slug) || /^p_\d+$/i.test(routePath) || /^page_id_/i.test(routePath)) {
     return true;

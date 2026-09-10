@@ -1,0 +1,1730 @@
+{
+  "$id": "peryton.content",
+  "pages": [
+    {
+      "slug": "about",
+      "title": "About Us",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "About Us",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Peryton Space is a student-led rocketry and space society at the University of Surrey. We are passionate about space exploration and education, and committed to developing projects and inspiring the next generation of aerospace engineers who will work in the space sector.</p><p>Our team consists of students from a variety of disciplines, including engineering, physics, mathematics, among others. We design, build, and launch rockets, and also develop new technologies for the space industry, such as space-based electronics and satellite systems.</p><p>We are also committed to inspiring the next generation of space engineers. We run a variety of outreach programs, including workshops, talks, and demonstrations.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/829c29b6-3484-44ff-bbd3-91b223953e31-3.jpg\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/microsoftteams-image-2.jpg\" alt=\"\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Innovation",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Peryton Space is one of the only student-led rocketry and space societies in the UK. Our recent wins are a testament to our hard work and dedication, and we are excited to continue building on our success.</p><p>Our innovative projects are helping to advance the interest of space engineering within the University and outside of the University. We are also helping to promote STEM education and to inspire the next generation of space engineers.</p><p>Peryton Space is a valuable asset to the University of Surrey. We are helping to put Surrey on the map as a leading centre for space research and education.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact-us",
+      "title": "Contact Us",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Contact us",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Duke of Kent Building, University of Surrey, 04DK00, Guildford, GU2 7TE, GB</p><p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=51.24268341064453,-0.5879362225532532\" rel=\"noopener noreferrer\" target=\"_blank\">University of Surrey on Google Maps</a></p>"
+          }
+        },
+        {
+          "type": "embedForm",
+          "props": {
+            "formEmbedUrl": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=kyaQa3QQqkCeIdiURqLrtU13fMDWn1lKk9I-knvOQF1UMkg2QU9OUjBCMkZJWVQyRlgzMVZOSVpJMy4u&embed=true",
+            "fallbackNote": "Contact form embed URL missing. Set <code>formEmbedUrl</code> on the contact-us page in <code>web/content/content.json</code>, or use society social channels."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "member-zone",
+      "title": "Member Zone",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Member Zone",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Public resources for members and peer societies (e.g. NRC teams looking for workshop materials). No login required.</p><p><strong>Email and phone numbers</strong> for private access requests are available on request through society channels — they are not published on this page.</p>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Workshops & making",
+            "level": 2
+          }
+        },
+        {
+          "type": "placeholder",
+          "props": {
+            "title": "How we make and order things",
+            "body": "Workshop process, materials, and ordering notes will be published here for members and peer societies."
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Courses",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Course information lives here (not under StagWorks), so people looking for training resources land in one place.</p>"
+          }
+        },
+        {
+          "type": "placeholder",
+          "props": {
+            "title": "Composites course",
+            "body": "Outline, who it is for, and how to join will appear here when the next course is scheduled."
+          }
+        },
+        {
+          "type": "placeholder",
+          "props": {
+            "title": "Electronics course",
+            "body": "Outline, who it is for, and how to join will appear here when the next course is scheduled."
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Contact us",
+            "href": "/contact-us/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "merch",
+      "title": "Merch",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Merch",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Society merchandise requests no longer use the old WordPress form. See <a href=\"/opportunities/\">Opportunities</a> or get in touch via Contact.</p>"
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Contact us",
+            "href": "/contact-us/"
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Opportunities",
+            "href": "/opportunities/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "opportunities",
+      "title": "Opportunities",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Opportunities",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Ways to get involved beyond competition teams. Reach out via <a href=\"/contact-us/\">Contact</a> if you want to help.</p>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Merch",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/08/t-shirt.a.front_-1.png\" alt=\"Peryton Space merch\" loading=\"lazy\" /></figure><p>Society merchandise — ask via Contact for current stock and ordering (legacy WordPress merch form retired).</p>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Website design / update",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/08/perytonspace.png\" alt=\"\" loading=\"lazy\" /></figure><p>Help keep the site accurate and useful — content edits happen in Git JSON; design feedback welcome through Contact.</p>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Social media",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/08/perytonspace-1.png\" alt=\"\" loading=\"lazy\" /></figure><p>Contribute to Instagram / LinkedIn / other channels — ask the committee how to join the comms rota.</p>"
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Contact us",
+            "href": "/contact-us/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sponsorships",
+      "title": "Sponsors / Partnerships",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Partners & sponsors",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>We work with partners who support student space engineering — through products, funding, and careers engagement.</p>"
+          }
+        },
+        {
+          "type": "tierList",
+          "props": {
+            "source": "sponsors"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "committee",
+      "title": "Historical Committees",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Committees",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Current and past committee years.</p>"
+          }
+        },
+        {
+          "type": "yearList",
+          "id": "historical-committees",
+          "props": {
+            "source": "team.historicalCommittees"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "committee-2026-2027",
+      "title": "Committee 2026–2027",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Committee 2026–2027",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Committee members for this year.</p>"
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.committee-2026-2027"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "committee-2025-2026",
+      "title": "Committee 2025–2026",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Committee 2025–2026",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Committee members for this year.</p>"
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.committee-2025-2026"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "committee-2023-2024",
+      "title": "Committee 2023–2024",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Committee 2023–2024",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Committee members for this year.</p>"
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.committee-2023-2024"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "team/supervisors",
+      "title": "Academic Supervisors",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Academic supervisors",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Faculty contacts for the society.</p>"
+          }
+        },
+        {
+          "type": "personGrid",
+          "props": {
+            "source": "team.supervisors"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "team/wellbeing",
+      "title": "Wellbeing Champions",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Wellbeing champions",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>If you need support, you can reach a wellbeing champion. Personal phone numbers and emails are <strong>not</strong> listed here — ask via society channels, or use University / SU wellbeing resources.</p>"
+          }
+        },
+        {
+          "type": "placeholder",
+          "props": {
+            "title": "Champions for this year",
+            "body": "Names will be listed here once the current champions have confirmed. In the meantime, ask via society channels or the SU wellbeing service."
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "University wellbeing (SU)",
+            "href": "https://www.ussu.co.uk/",
+            "external": true
+          }
+        }
+      ]
+    },
+    {
+      "slug": "stagworks",
+      "title": "StagWorks",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "StagWorks",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>StagWorks is Peryton Space’s home for projects outside the main competition programmes — high-altitude balloons, RF, composites, and FEPS boards.</p>"
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<ul><li><a href=\"/weather-balloon-division/\">Weather Balloon</a></li><li><a href=\"/stagworks/rf/\">RF experiments</a></li><li><a href=\"/stagworks/composites/\">Composite testing</a></li><li><a href=\"/stagworks/feps/\">FEPS boards</a></li></ul>"
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Course resources (composites / electronics) live in the <a href=\"/member-zone/\">Member Zone</a>, not here.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "weather-balloon-division",
+      "title": "Weather Balloon Project",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Weather Balloon Project",
+            "level": 1
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/space2-1.png\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/space3-1.png\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/space-3.png\" alt=\"\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/image001-3.png\" alt=\"\" loading=\"lazy\" /></figure><p>Peryton Space is working on creating a weather balloon to reach an altitude of 115,000 feet for various science experiments and payloads.</p>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Payloads",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<ul><li><strong>2024 — Perovskite Solar Cells.</strong> We are planning to fly a payload to measure the effectiveness of Perovskite solar cells used in space-based applications.</li><li><strong>2023 — Pisa Flight.</strong> October 2023: Peryton Space visited the University of Pisa as part of dissertation research on “Testing Perovskite Solar Cells for Space-based Applications.” The weather balloon test with attached Perovskite solar cells reached an apogee of approximately 105,000 ft and was successfully recovered. Subsequent weeks were dedicated to analysing the results. Thanks to Jae Sung Yun for entrusting the mission to the team. Knowledge from this test is expected to inform future weather balloon projects with Peryton Space.</li></ul><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/university_of_pisa.svg_.png\" alt=\"University of Pisa\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/wide-balloon.jpg\" alt=\"\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Back to StagWorks",
+            "href": "/stagworks/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "stagworks/rf",
+      "title": "StagWorks — RF",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "RF experiments",
+            "level": 1
+          }
+        },
+        {
+          "type": "placeholder",
+          "props": {
+            "title": "Coming into StagWorks",
+            "body": "RF experiments sit under StagWorks, outside competition budgets. A write-up will appear here when the programme is confirmed."
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Back to StagWorks",
+            "href": "/stagworks/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "stagworks/composites",
+      "title": "StagWorks — Composite testing",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Composite testing",
+            "level": 1
+          }
+        },
+        {
+          "type": "placeholder",
+          "props": {
+            "title": "Coming into StagWorks",
+            "body": "Mechanical and composite testing to de-risk competition work. Course information lives in the Member Zone."
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Member Zone courses",
+            "href": "/member-zone/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "stagworks/feps",
+      "title": "StagWorks — FEPS boards",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "FEPS boards",
+            "level": 1
+          }
+        },
+        {
+          "type": "placeholder",
+          "props": {
+            "title": "Coming into StagWorks",
+            "body": "Power and protection learning boards (e-fuses, regulators, and similar). A write-up will appear here when the programme is confirmed."
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Back to StagWorks",
+            "href": "/stagworks/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nrc-2023",
+      "title": "Team NRC 2023",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Team NRC 2023",
+            "level": 1
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.nrc-2023"
+          }
+        },
+        {
+          "type": "cta",
+          "props": {
+            "label": "Back to National Rocketry Championship",
+            "href": "/nationalrocketry/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "teammach23",
+      "title": "Team Mach-23",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Team Mach-23",
+            "level": 1
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.teammach23"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "teamsdc",
+      "title": "Team Satellite Design Competition 2023",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Team Satellite Design Competition 2023",
+            "level": 1
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.teamsdc"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "mach-x-teams",
+      "title": "Mach-X Teams",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Mach-X Teams",
+            "level": 1
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.mach-x-teams"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "satellite-design-competition-teams",
+      "title": "Satellite Design Competition Teams",
+      "status": "published",
+      "sections": [
+        {
+          "type": "heading",
+          "props": {
+            "text": "Satellite Design Competition Teams",
+            "level": 1
+          }
+        },
+        {
+          "type": "personGroups",
+          "props": {
+            "source": "team.rosters.satellite-design-competition-teams"
+          }
+        }
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "id": "sdc",
+      "group": "missions",
+      "navLabel": "Satellite Design Competition",
+      "hubSlug": "satellite-design-competition",
+      "title": "Satellite Design Competition",
+      "coverImage": "/media/covers/sdc-23-cubesat.jpg",
+      "introHtml": "<p>The UKSEDS Satellite Design Competition challenges students and young professionals to design and construct a CubeSat prototype addressing a specific challenge in the space industry. The programme follows a space-sector workflow — preliminary design review (PDR), critical design review (CDR), and test readiness review (TRR) — with industry partners such as Airbus.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/sdc-logo-22.23-300x300-removebg-preview.png\" alt=\"Satellite Design Competition logo\" loading=\"lazy\" /></figure>"
+          }
+        }
+      ],
+      "relatedLinks": [
+        {
+          "label": "Legacy teams page",
+          "href": "/satellite-design-competition-teams/"
+        },
+        {
+          "label": "Team SDC 2023 (archive)",
+          "href": "/teamsdc/"
+        }
+      ],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "summary": "Most recent SDC campaign. Full write-up TBD (Severin / team).",
+          "highlights": [],
+          "awards": [
+            "Best Innovation"
+          ],
+          "intake": "sdc-2024-2025"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "placeholder",
+          "summary": "Post-Myers competition year. Narrative and results TBD.",
+          "highlights": [],
+          "awards": [],
+          "intake": "sdc-2023-2024"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022–2023",
+          "status": "published",
+          "coverImage": "/media/covers/sdc-23-airbus.jpg",
+          "summary": "Peryton Space won the 2023 Satellite Design Competition. The team designed and built a CubeSat prototype addressing space debris — the 22/23 cycle focus — and took the prototype through rigorous testing.",
+          "highlights": [
+            "1st place — Satellite Design Competition 2023",
+            "3U CubeSat (D.A.V.E) to image and detect debris in LEO",
+            "PDR / CDR / TRR workflow with industry partners including Airbus"
+          ],
+          "awards": [
+            "1st place — Satellite Design Competition 2023"
+          ],
+          "intake": "sdc-2022-2023",
+          "teamHref": "/teamsdc/",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": {
+                "text": "D.A.V.E",
+                "level": 2
+              }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>D.A.V.E is a 3U CubeSat designed to image and detect space debris in Low-Earth Orbit.</p><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/sdc-team-1.jpg\" alt=\"SDC 2022–2023 team\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/sdc.png\" alt=\"D.A.V.E CubeSat\" loading=\"lazy\" /></figure><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2024/01/picture3.png\" alt=\"SDC 2023 prototype\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2024/01/1689860853863.jpg\" alt=\"SDC 2023 testing\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/microsoftteams-image-15.png\" alt=\"Additional details of the 2023 satellite\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ort",
+      "group": "missions",
+      "navLabel": "Olympus Rover Trials",
+      "hubSlug": "olympus-rover-trials",
+      "title": "Olympus Rover Trials",
+      "coverImage": "/media/covers/ort-25-team.jpg",
+      "introHtml": "<p>The Olympus Rover Trials (ORT) challenge student teams to design, build, and operate a rover for a simulated Mars sample return mission. Students create a rover concept, undergo a thorough review by space industry engineers, and balance performance parameters.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2023/10/ort-logo-22.23-1-300x300-1.png\" alt=\"Olympus Rover Trials logo\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Aims",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<ol><li>Engage students in complex systems engineering for a realistic space mission.</li><li>Apply and learn technical skills relevant to the space industry in a project setting.</li><li>Develop teamwork, leadership, and project management skills.</li><li>Spark interest in space engineering and robotics.</li></ol><p>ORT gives students a hands-on, real-world experience to prepare them for careers in the space sector.</p>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": []
+    },
+    {
+      "id": "iosm",
+      "group": "missions",
+      "navLabel": "IOSM",
+      "hubSlug": "ukseds-in-orbit-servicing-and-manufacturing",
+      "title": "In-Orbit Servicing and Manufacturing",
+      "introHtml": "<p>UKSEDS In-Orbit Servicing and Manufacturing challenges teams to conceptualise a feasible business strategy and space mission proposal in the IOSM domain. The competition includes three reports and encourages interdisciplinary teams — mission design, engineering, business development, and other industry-relevant skills.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/ismc-logo-22_23-300x300-1.png\" alt=\"IOSM competition logo\" loading=\"lazy\" /></figure>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": [
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "published",
+          "summary": "Peryton Space won the 2024 IOSM UKSEDS competition in our first year competing. The team completed three challenges — detailed reports, posters, a business one-pager, and a presentation — tackling the space debris problem with STELLAR (Satellite Trash Elimination from LEO using Adhesive Removal): a satellite that uses an adhesive interface inspired by gecko feet to attach drag sails to debris and bring them back to Earth.",
+          "highlights": [
+            "First-year entry; overall competition winners",
+            "Three-challenge format: reports, posters, business one-pager, presentation",
+            "STELLAR concept: gecko-inspired adhesive drag sails for LEO debris"
+          ],
+          "awards": [
+            "1st place — IOSM UKSEDS 2024"
+          ],
+          "intake": "iosm-2023-2024",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": {
+                "text": "STELLAR",
+                "level": 2
+              }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>With over 100,000 pieces of debris predicted in orbit by 2030, STELLAR proposes attaching drag sails via an adhesive interface inspired by gecko feet so debris can deorbit safely.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/screenshot_2024-09-30-23-46-56-428_com.instagram.android2.jpg\" alt=\"IOSM 2024 win announcement\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nrc",
+      "group": "launch",
+      "navLabel": "National Rocketry Championship",
+      "hubSlug": "nationalrocketry",
+      "title": "National Rocketry Championship",
+      "introHtml": "<p>UKSEDS created the National Rocketry Championships in 2013 to give university students with little or no rocketry experience hands-on practice designing, building, and launching a rocket. Teams aim for a mid-power rocket with a primary goal of reaching an apogee of 2500 ft, carry a payload, and submit a technical report for industry evaluation. <a href=\"https://hub.ukseds.org/p/comps-national-rocketry-championship-2023-24\" rel=\"noopener noreferrer\" target=\"_blank\">UKSEDS NRC hub</a>.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/onrc-logo-22.23-1-300x300-removebg-preview.png\" alt=\"National Rocketry Championship logo\" loading=\"lazy\" /></figure>"
+          }
+        }
+      ],
+      "relatedLinks": [
+        {
+          "label": "Team NRC 2023 (archive)",
+          "href": "/nrc-2023/"
+        }
+      ],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "summary": "Write-up TBD — intake: NRC (−2y backlog).",
+          "highlights": [],
+          "awards": [],
+          "intake": "nrc-2024-2025"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "published",
+          "coverImage": "/media/covers/nrc-23-acres.jpg",
+          "summary": "The NRC teams at Peryton Space faced a highly challenging competition this year, especially for newer engineers who were truly thrown in at the deep end. Despite that, they excelled — successfully designing and launching their rockets on competition day. Many aspects of their designs were highly innovative, demonstrating engineering practices often beyond what is typically expected from 1st and 2nd year students.",
+          "highlights": [
+            "Successful design and launch on competition day",
+            "Strong showing from newer engineers under pressure",
+            "Innovative design choices beyond typical early-year scope"
+          ],
+          "awards": [],
+          "intake": "nrc-2023-2024",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": {
+                "text": "Competition day",
+                "level": 2
+              }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image.jpeg\" alt=\"NRC 2023–2024 team\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-2-copy.jpeg\" alt=\"NRC 2023–2024 rocket\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-6-copy.jpeg\" alt=\"NRC 2023–2024 pad\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-3.jpeg\" alt=\"NRC 2023–2024 launch\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/image-1.jpeg\" alt=\"NRC 2023–2024 additional\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022–2023",
+          "status": "published",
+          "coverImage": "/media/covers/nrc-22-nano.jpg",
+          "summary": "Following the success in 2022, the team tunnel-visioned on a poorly designed rocket. It was maximised for apogee but it relied too heavily on Open Rocket. The launch was a failure, with the rocket swerving off the rail. The rocket was recovered over 250 days after it was launched after it lost a battle against a tractor. This was a huge learning experience for the team…",
+          "highlights": [
+            "Apogee-focused design that over-trusted Open Rocket",
+            "Rail departure failure at launch",
+            "Airframe recovered 250+ days later (tractor damage)",
+            "Major learning year for the team"
+          ],
+          "awards": []
+        },
+        {
+          "id": "2021-2022",
+          "label": "2021–2022",
+          "status": "published",
+          "summary": "In our first year competing in the NRC, Peryton Space came 4th overall and achieved the 2nd highest apogee of the competition, 925m. Peryton 1 was the first rocket ever designed, built and launched by Peryton Space. It held a 100 g payload that measured the angular velocity, acceleration and velocity of the rocket, as well as the temperature of the air and the magnetic field of the Earth. The body of the rocket was recovered straight away but the nosecone detached. Thanks to an alarm on the payload, it was found 24 hours after launch the next day.",
+          "highlights": [
+            "First Peryton Space rocket: Peryton 1",
+            "100 g payload: angular velocity, acceleration, velocity, air temperature, magnetic field",
+            "Body recovered immediately; nosecone recovered next day via payload alarm"
+          ],
+          "awards": [
+            "4th overall",
+            "2nd highest apogee (925m)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mach",
+      "group": "launch",
+      "navLabel": "Mach-X",
+      "hubSlug": "mach",
+      "title": "Mach-X",
+      "coverImage": "/media/covers/mach-23-team.jpg",
+      "introHtml": "<p>Mach-X high-power rocketry at Machrihanish. Students design, build, and launch a rocket and CanSat — a satellite simulation that fits the volume and shape of a drinks can — with skills workshops supported by national space companies.</p>",
+      "relatedLinks": [
+        {
+          "label": "Mach-X teams",
+          "href": "/mach-x-teams/"
+        },
+        {
+          "label": "Team Mach-23",
+          "href": "/teammach23/"
+        }
+      ],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "coverImage": "/media/covers/mach-25-lab.jpg",
+          "summary": "Write-up TBD — intake: Mach (−1y backlog).",
+          "highlights": [],
+          "awards": [],
+          "intake": "mach-2024-2025"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023–2024",
+          "status": "published",
+          "coverImage": "/media/covers/mach-24-team.jpg",
+          "summary": "From 10–14 July, Peryton Space attended Mach-24. The team flew in the combined 1.5 &amp; 3 km category with the high-power rocket developed over the 2023/2024 academic year, aiming for a 3 km apogee. First-time composite manufacturing with flax-based fins and integrated solar cells on the nosecone, plus an entire test rocket — another team first. CanSat and recovery systems recorded the flight: the rocket reached 2.5 km, our highest apogee to date.",
+          "highlights": [
+            "Combined 1.5 &amp; 3 km category attempt",
+            "Highest apogee to date: 2.5 km",
+            "First flax composite fins and nosecone solar cells",
+            "First full test rocket built by the team"
+          ],
+          "awards": [
+            "2nd place — combined category"
+          ],
+          "intake": "mach-2023-2024",
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": {
+                "text": "Rocket &amp; CanSat",
+                "level": 2
+              }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/mach-22-logo_edited.webp\" alt=\"Mach competition logo\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/09/whatsapp-image-2024-09-30-at-23.52.56_e4f27044.jpg\" alt=\"Mach-24 rocket\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/09/whatsapp-image-2024-09-30-at-23.49.10_56c4163c.jpg\" alt=\"Mach-24 CanSat\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/09/whatsapp-image-2024-09-30-at-23.49.10_209bee69.jpg\" alt=\"Mach-24 CanSat detail\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/10/whatsapp-image-2024-09-30-at-23.51.04_a752a64d.jpg\" alt=\"Mach-24 additional media\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022–2023",
+          "status": "published",
+          "coverImage": "/media/covers/mach-23-team.jpg",
+          "summary": "Celebrating 9 months of dedicated efforts, Peryton Space proudly claimed the top spot in the Mach 23 1.5 km category. Our team executed a launch and recovery of our rocket, alongside the successful deployment and retrieval of our CanSat. The journey was nothing short of incredible, especially as we had the privilege of connecting with fellow student rocketry teams across the UK. Special appreciation goes out to GU Rocketry — despite our technical rivalry, your camaraderie added an extra layer of greatness to the competition. We’re already looking forward to the next year, hoping to meet and collaborate with all the fantastic teams once again.",
+          "highlights": [
+            "Launch and recovery of the Mach-23 rocket",
+            "Successful CanSat deployment and retrieval",
+            "Strong links with other UK student rocketry teams"
+          ],
+          "awards": [
+            "1st place — Mach 23 1.5 km category"
+          ],
+          "extraSections": [
+            {
+              "type": "heading",
+              "props": {
+                "text": "Rocket",
+                "level": 2
+              }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>Launch vehicle aimed at an apogee close to 1500 m, demonstrating space-based solar power transmission with onboard solar panels.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/img_6259-1.jpg\" alt=\"Mach-23 rocket\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/d0bb057b-0b4a-4c9f-bc47-d1e8828e1a08-1.jpg\" alt=\"Mach-23 build\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/829c29b6-3484-44ff-bbd3-91b223953e31-1.jpg\" alt=\"Mach-23 airframe\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/11b4a92d-5ba4-42c1-bd57-df8cbe60bf67-1.jpg\" alt=\"Mach-23 detail\" loading=\"lazy\" /></figure><figure class=\"ps-figure ps-figure--row\"><img src=\"/wp-content/uploads/2023/11/photo-2023-11-17-12-15-55.jpg\" alt=\"Mach-23 competition day\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2023/11/photo-2023-11-17-12-16-04-1.jpg\" alt=\"Mach-23 competition day\" loading=\"lazy\" /><img src=\"/wp-content/uploads/2023/11/photo-2023-11-17-12-16-02.jpg\" alt=\"Mach-23 competition day\" loading=\"lazy\" /></figure>"
+              }
+            },
+            {
+              "type": "heading",
+              "props": {
+                "text": "CanSat",
+                "level": 2
+              }
+            },
+            {
+              "type": "richtext",
+              "props": {
+                "html": "<p>The CanSat collected flight data and simulated harnessing energy from space with a solar-powered radio circuit transmitting live telemetry to the ground station. Onboard: pressure and temperature sensors for altitude, IMU and GPS for tracking, and deployable tape-measure antennas for the radio.</p><p>Two computers: a Teensy 4.0 for sensor data and storage, and an ESP32 for radio transmit. Dual pressure sensors for redundancy with four LM75 temperature sensors per PCB layer; MPU-6500 IMU; Neo-6M GPS. The ESP32 ran from a LiPo charging circuit powered by a side-mounted solar panel.</p><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/img_6211.jpg\" alt=\"Mach-23 CanSat\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/9933b4f0-2ca5-4788-a245-feccc622277c-1.jpg\" alt=\"Mach-23 CanSat avionics\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/d76e15a7-baa6-4a1f-9f23-eec4dc946aec-1.jpg\" alt=\"Mach-23 CanSat assembly\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/img_6212.jpg\" alt=\"Mach-23 additional\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/9ab99c13-620a-46b3-a242-b7da830c05de.jpg\" alt=\"Mach-23 media\" loading=\"lazy\" /></figure><figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/02/52ca20db-99bf-49c8-a356-402efddc085c.jpg\" alt=\"Mach-23 team\" loading=\"lazy\" /></figure>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "race2space",
+      "group": "launch",
+      "navLabel": "Race2Space",
+      "hubSlug": "race2space",
+      "title": "Race2Space",
+      "introHtml": "<p>Peryton Space joined <a href=\"https://www.racetospace.org.uk/\" rel=\"noopener noreferrer\" target=\"_blank\">Race2Space</a>, a national education initiative to strengthen the UK space sector through hands-on learning. Students solve real engineering problems by designing, manufacturing, and testing rocket engines — building skills the industry needs and aligning with the National Space Policy goal of capturing 10% of the global space market by 2030.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2024/01/logo-01-removebg-preview.png\" alt=\"Race2Space logo\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "PHYRE (Peryton Hybrid Rocket Engine)",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>The PHYRE cold-flow test successfully used liquid nitrous oxide (N₂O) at pressures up to 50 bar, surpassing initial projections. A significant leak at the igniter port highlighted needed design improvements before integrating with the combustion chamber. The team is preparing for the hot-fire test of PHYRE V1 while handing over to new members for the next cycle.</p>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "published",
+          "summary": "PHYRE (Peryton Hybrid Rocket Engine) cold-flow testing with liquid N₂O up to 50 bar. Igniter-port leak informed design changes ahead of combustion-chamber integration and the planned hot-fire of PHYRE V1, with knowledge transfer to the next cohort.",
+          "highlights": [
+            "Cold-flow test to 50 bar N₂O",
+            "Igniter-port leak identified for redesign",
+            "Hot-fire of PHYRE V1 in preparation; team handover underway"
+          ],
+          "awards": [],
+          "intake": "race2space-2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "l4c",
+      "group": "launch",
+      "navLabel": "Launch4Change",
+      "hubSlug": "launch4change",
+      "title": "Launch4Change",
+      "introHtml": "<p>Organised by Durham University and funded by the Advanced Research and Invention Agency (ARIA), Launch4Change is a high-powered rocketry competition between a selection of 10 universities. Teams build a high-powered rocket allowed to reach up to 8 km in altitude, plus a climate R&amp;D payload.</p>",
+      "extraSections": [
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<figure class=\"ps-figure\"><img src=\"/wp-content/uploads/2025/11/l4c-2.png\" alt=\"Launch4Change\" loading=\"lazy\" /></figure>"
+          }
+        },
+        {
+          "type": "heading",
+          "props": {
+            "text": "Get involved",
+            "level": 2
+          }
+        },
+        {
+          "type": "richtext",
+          "props": {
+            "html": "<p>Interested in joining the next Launch4Change cycle? Reach out via the <a href=\"/contact-us/\">contact form</a> or society channels. Workshop resources for peers live in the <a href=\"/member-zone/\">Member Zone</a>.</p>"
+          }
+        }
+      ],
+      "relatedLinks": [],
+      "years": [
+        {
+          "id": "2024-2025",
+          "label": "2024–2025",
+          "status": "placeholder",
+          "summary": "Proper year write-up TBD — intake: Launch4Change section.",
+          "highlights": [],
+          "awards": [],
+          "intake": "l4c-2024-2025"
+        }
+      ]
+    }
+  ],
+  "intake": {
+    "nrc-2024-2025": {
+      "label": "NRC 2024–2025",
+      "owner": "Severin",
+      "done": false
+    },
+    "nrc-2023-2024": {
+      "label": "NRC 2023–2024",
+      "owner": "Severin",
+      "done": true,
+      "note": "Folded from draft-nrc-2023-2024 (2023–2024 section only)."
+    },
+    "mach-2024-2025": {
+      "label": "Mach-X 2024–2025",
+      "owner": "Severin",
+      "done": false
+    },
+    "mach-2023-2024": {
+      "label": "Mach-X / Mach-24",
+      "owner": "Severin",
+      "done": true,
+      "note": "Folded from draft-mach-x Mach-24 write-up."
+    },
+    "race2space-2024-2025": {
+      "label": "Race2Space update",
+      "owner": "Severin",
+      "done": true,
+      "note": "Hub + PHYRE from draft-race2space."
+    },
+    "iosm-2023-2024": {
+      "label": "IOSM 2024 win (STELLAR)",
+      "owner": "Severin",
+      "done": true,
+      "note": "Folded from draft IOSM page."
+    },
+    "l4c-2024-2025": {
+      "label": "Launch4Change year campaign",
+      "owner": "Severin",
+      "done": false,
+      "note": "Hub copy folded from scrape; year outcome still TBD."
+    },
+    "sdc-2024-2025": {
+      "label": "SDC 2024–2025 (+ Best Innovation)",
+      "owner": "Severin",
+      "done": false
+    },
+    "sdc-2023-2024": {
+      "label": "SDC 2023–2024",
+      "owner": "Severin",
+      "done": false
+    },
+    "sdc-2022-2023": {
+      "label": "SDC 2022–2023 (D.A.V.E win)",
+      "owner": "fold-in",
+      "done": true,
+      "note": "Folded from /satellite-design-competition/ scrape."
+    },
+    "nrc-draft-radiation": {
+      "label": "NRC draft radiation-payload blurb",
+      "owner": "Severin",
+      "done": false,
+      "note": "Present under misaligned year heading in draft-nrc-2023-2024 — confirm year before publishing; do not overwrite 2021–2023 published years."
+    },
+    "space-uncertain": {
+      "label": "Confirm Space / other uncertain pages",
+      "owner": "Severin",
+      "done": false,
+      "deferred": true,
+      "note": "Meeting: Space not certain — deferred until confirmed."
+    }
+  },
+  "team": {
+    "supervisors": [
+      {
+        "name": "Chris",
+        "role": "Academic Supervisor",
+        "linkedin": null
+      },
+      {
+        "name": "Andrew",
+        "role": "Academic Supervisor",
+        "linkedin": null
+      }
+    ],
+    "wellbeing": [],
+    "historicalCommittees": [
+      {
+        "year": "2026-2027",
+        "href": "/committee-2026-2027/",
+        "label": "Committee 2026–2027",
+        "current": true
+      },
+      {
+        "year": "2025-2026",
+        "href": "/committee-2025-2026/",
+        "label": "Committee 2025–2026"
+      },
+      {
+        "year": "2023-2024",
+        "href": "/committee-2023-2024/",
+        "label": "Committee 2023–2024"
+      }
+    ],
+    "rosters": {
+      "committee-2026-2027": {
+        "title": "Committee 2026–2027",
+        "status": "published",
+        "groups": [
+          {
+            "title": "Main Committee",
+            "members": [
+              {
+                "name": "Carys Burchell",
+                "role": "President",
+                "photo": "/wp-content/uploads/2025/11/picture2.png",
+                "linkedin": null
+              },
+              {
+                "name": "Miruna",
+                "role": "Vice-President",
+                "photo": null,
+                "linkedin": null
+              },
+              {
+                "name": "Severin Tretzmueller",
+                "role": "Treasurer",
+                "photo": "/wp-content/uploads/2025/11/picture4.png",
+                "linkedin": null
+              },
+              {
+                "name": "Caitlin Doutch",
+                "role": "VP Launch",
+                "photo": "/wp-content/uploads/2025/11/picture5.png",
+                "linkedin": null
+              },
+              {
+                "name": "Jim Lam",
+                "role": "VP Mission",
+                "photo": null,
+                "linkedin": null
+              }
+            ]
+          },
+          {
+            "title": "Wider Committee",
+            "members": [
+              {
+                "name": "Anya",
+                "role": "Head of Outreach",
+                "photo": null,
+                "linkedin": null
+              },
+              {
+                "name": "Vihanya",
+                "role": "Social Secretary",
+                "photo": null,
+                "linkedin": null
+              }
+            ]
+          }
+        ]
+      },
+      "committee-2025-2026": {
+        "title": "Committee 2025–2026",
+        "status": "published",
+        "groups": [
+          {
+            "title": "Main Committee",
+            "members": [
+              {
+                "name": "Matt Cockfield-Hall",
+                "role": "President",
+                "photo": "/wp-content/uploads/2025/11/picture1.png",
+                "linkedin": null
+              },
+              {
+                "name": "Carys Burchell",
+                "role": "Vice-President",
+                "photo": "/wp-content/uploads/2025/11/picture2.png",
+                "linkedin": null
+              },
+              {
+                "name": "Severin Tretzmueller",
+                "role": "Treasurer",
+                "photo": "/wp-content/uploads/2025/11/picture4.png",
+                "linkedin": null
+              },
+              {
+                "name": "Caitlin Doutch",
+                "role": "VP Rocketry",
+                "photo": "/wp-content/uploads/2025/11/picture5.png",
+                "linkedin": null
+              }
+            ]
+          },
+          {
+            "title": "Wider Committee",
+            "members": [
+              {
+                "name": "Tommy Richards",
+                "role": "Head of Outreach",
+                "photo": "/wp-content/uploads/2025/11/tommy.png",
+                "linkedin": null
+              },
+              {
+                "name": "Mya White",
+                "role": "Social Sec",
+                "photo": "/wp-content/uploads/2025/12/mya.png",
+                "linkedin": null
+              }
+            ]
+          }
+        ]
+      },
+      "committee-2023-2024": {
+        "title": "Committee 2023–2024",
+        "status": "published",
+        "groups": [
+          {
+            "title": "Committee",
+            "members": [
+              {
+                "name": "Tommy Richards",
+                "role": "President",
+                "photo": "/wp-content/uploads/2024/01/1644967006846.jpeg",
+                "linkedin": null
+              },
+              {
+                "name": "Charles Deebank",
+                "role": "VP Rocketry",
+                "photo": "/wp-content/uploads/2025/02/media-3-edited.jpg",
+                "linkedin": null
+              },
+              {
+                "name": "Elisavetha (Lizzie) Sergeev",
+                "role": "Treasurer",
+                "photo": "/wp-content/uploads/2024/02/lizzie.jpeg",
+                "linkedin": null
+              },
+              {
+                "name": "Ieuan Carney",
+                "role": "VP Stagworks",
+                "photo": "/wp-content/uploads/2024/01/1617133022829.jpeg",
+                "linkedin": null
+              },
+              {
+                "name": "Abi Yetton",
+                "role": "VP Satellites",
+                "photo": "/wp-content/uploads/2025/02/image.jpg",
+                "linkedin": null
+              },
+              {
+                "name": "Ricardo Cavalheiro",
+                "role": "VP of Marketing, Social Media and Website Design",
+                "photo": "/wp-content/uploads/2024/01/imagem11-1.png",
+                "linkedin": null
+              }
+            ]
+          },
+          {
+            "title": "Supervisor",
+            "members": [
+              {
+                "name": "Rob Siddall",
+                "role": "Faculty Supervisor",
+                "photo": "/wp-content/uploads/2024/02/rob.jpeg",
+                "linkedin": null
+              }
+            ]
+          }
+        ]
+      },
+      "teammach23": {
+        "title": "Team Mach-23",
+        "status": "published",
+        "groups": [
+          {
+            "members": [
+              {
+                "name": "Luke Tremblin",
+                "role": "Co-Team Lead",
+                "photo": "/wp-content/uploads/2024/01/luke.png",
+                "linkedin": null,
+                "note": "I used to live right next to Cape Canaveral in Florida"
+              },
+              {
+                "name": "Ricardo Cavalheiro",
+                "role": "Co-Team Lead",
+                "photo": "/wp-content/uploads/2024/01/imagem11.png",
+                "linkedin": null,
+                "note": "I am a bodybuilder"
+              },
+              {
+                "name": "Macsen Iles",
+                "role": "Co-Head of Structures",
+                "photo": "/wp-content/uploads/2024/01/mac.png",
+                "linkedin": null,
+                "note": "I like Planes"
+              },
+              {
+                "name": "Cam Branney",
+                "role": "Co-Head of Structures",
+                "photo": "/wp-content/uploads/2024/01/cam.png",
+                "linkedin": null,
+                "note": "Did a placement at BAE systems and worked on"
+              },
+              {
+                "name": "Harvey Nixon",
+                "role": "Head of Avionics",
+                "photo": "/wp-content/uploads/2023/10/imagem3.gif",
+                "linkedin": null,
+                "note": "I am learning Italian"
+              },
+              {
+                "name": "Alex Hotten",
+                "role": "Head of Recovery",
+                "photo": "/wp-content/uploads/2024/01/luw.png",
+                "linkedin": null,
+                "note": "I will eat any food and have had Zebra, Impala, Crocodile, Crickets and Tarantula"
+              },
+              {
+                "name": "Tommy Richards",
+                "role": "Head of Testing",
+                "photo": "/wp-content/uploads/2024/01/tommy.png",
+                "linkedin": null,
+                "note": "I have flown a glider solo before, but I do not have a driver’s license"
+              },
+              {
+                "name": "Charles Deebank",
+                "role": "Head of Launch",
+                "photo": "/wp-content/uploads/2024/01/charles.png",
+                "linkedin": null,
+                "note": "I am Scottish but don’t own a kilt"
+              },
+              {
+                "name": "Caspar Pierce",
+                "role": "Head of Ground Station",
+                "photo": "/wp-content/uploads/2024/01/caspar.png",
+                "linkedin": null,
+                "note": "I once almost got frostbite whilst flying a Biplane"
+              }
+            ]
+          }
+        ]
+      },
+      "teamsdc": {
+        "title": "Team Satellite Design Competition 2023",
+        "status": "published",
+        "groups": [
+          {
+            "members": [
+              {
+                "name": "Ieuan Carney",
+                "role": "Systems Engineer and Team Lead",
+                "photo": "/wp-content/uploads/2023/09/image-5.png",
+                "linkedin": null,
+                "note": "I grew up in Dubai and represented them in Cricket"
+              },
+              {
+                "name": "Vishalya Kontham",
+                "role": "Projects Manager",
+                "photo": "/wp-content/uploads/2023/09/image-6.png",
+                "linkedin": null,
+                "note": "I grew up in 5 different countries and love dogs"
+              },
+              {
+                "name": "Charis (Harry) Sakellariou",
+                "role": "ADCS Lead",
+                "photo": "/wp-content/uploads/2023/09/image-8.png",
+                "linkedin": null,
+                "note": "When I was younger, I used to do Stand-up Comedy"
+              },
+              {
+                "name": "Vasu Chadeesingh",
+                "role": "TT&C Lead",
+                "photo": "/wp-content/uploads/2023/09/image-9.png",
+                "linkedin": null,
+                "note": "I mix music for a hobby"
+              },
+              {
+                "name": "Abigail Yetton",
+                "role": "Payload Lead",
+                "photo": "/wp-content/uploads/2023/09/image-10.png",
+                "linkedin": null,
+                "note": "I own all 50 years’ worth Peanut Comics"
+              },
+              {
+                "name": "Miguel Escudero Munoz",
+                "role": "Mechanical Lead",
+                "photo": "/wp-content/uploads/2023/09/image-12.png",
+                "linkedin": null,
+                "note": "I can recite 50 Harry Potter spells from the top of my head"
+              },
+              {
+                "name": "Chamal Perrera",
+                "role": "EPS Lead",
+                "photo": "/wp-content/uploads/2023/09/image-13.png",
+                "linkedin": null,
+                "note": "I think Space Politics and Law is fun"
+              },
+              {
+                "name": "Anouk Ceuppens",
+                "role": "Software Lead",
+                "photo": "/wp-content/uploads/2023/09/image-14.png",
+                "linkedin": null,
+                "note": "I will be cycling from the North Sea to the Mediterranean this September"
+              }
+            ]
+          }
+        ]
+      },
+      "mach-x-teams": {
+        "title": "Mach-X Teams",
+        "status": "published",
+        "groups": [
+          {
+            "members": [
+              {
+                "name": "Luke Tremblin",
+                "role": "Co-Team Lead",
+                "photo": "/wp-content/uploads/2024/01/luke.png",
+                "linkedin": null,
+                "note": "I used to live right next to Cape Canaveral in Florida"
+              },
+              {
+                "name": "Ricardo Cavalheiro",
+                "role": "Co-Team Lead",
+                "photo": "/wp-content/uploads/2024/01/imagem11.png",
+                "linkedin": null,
+                "note": "I am a bodybuilder"
+              },
+              {
+                "name": "Macsen Iles",
+                "role": "Co-Head of Structures",
+                "photo": "/wp-content/uploads/2024/01/mac.png",
+                "linkedin": null,
+                "note": "I like Planes"
+              },
+              {
+                "name": "Cam Branney",
+                "role": "Co-Head of Structures",
+                "photo": "/wp-content/uploads/2024/01/cam.png",
+                "linkedin": null,
+                "note": "Did a placement at BAE systems and worked on"
+              },
+              {
+                "name": "Harvey Nixon",
+                "role": "Head of Avionics",
+                "photo": "/wp-content/uploads/2023/10/imagem3.gif",
+                "linkedin": null,
+                "note": "I am learning Italian"
+              },
+              {
+                "name": "Alex Hotten",
+                "role": "Head of Recovery",
+                "photo": "/wp-content/uploads/2024/01/luw.png",
+                "linkedin": null,
+                "note": "I will eat any food and have had Zebra, Impala, Crocodile, Crickets and Tarantula"
+              },
+              {
+                "name": "Tommy Richards",
+                "role": "Head of Testing",
+                "photo": "/wp-content/uploads/2024/01/tommy.png",
+                "linkedin": null,
+                "note": "I have flown a glider solo before, but I do not have a driver’s license"
+              },
+              {
+                "name": "Charles Deebank",
+                "role": "Head of Launch",
+                "photo": "/wp-content/uploads/2024/01/charles.png",
+                "linkedin": null,
+                "note": "I am Scottish but don’t own a kilt"
+              },
+              {
+                "name": "Caspar Pierce",
+                "role": "Head of Ground Station",
+                "photo": "/wp-content/uploads/2024/01/caspar.png",
+                "linkedin": null,
+                "note": "I once almost got frostbite whilst flying a Biplane"
+              }
+            ]
+          }
+        ]
+      },
+      "satellite-design-competition-teams": {
+        "title": "Satellite Design Competition Teams",
+        "status": "published",
+        "groups": [
+          {
+            "members": [
+              {
+                "name": "Mya White",
+                "role": "Project Lead / Systems Engineer",
+                "photo": "/wp-content/uploads/2024/09/mya.jpeg",
+                "linkedin": null
+              },
+              {
+                "name": "Gabriel Zbirowksi-Acevedo",
+                "role": "Project Manager",
+                "linkedin": null
+              },
+              {
+                "name": "Terry Savva",
+                "role": "Head of Mechanical",
+                "photo": "/wp-content/uploads/2024/09/terry.jpeg",
+                "linkedin": null
+              },
+              {
+                "name": "Mowisha Srikuberan",
+                "role": "Mechanical Support",
+                "photo": "/wp-content/uploads/2024/09/mowii.jpeg",
+                "linkedin": null
+              },
+              {
+                "name": "Samuel Delaney",
+                "role": "Head of AOCS",
+                "linkedin": null
+              },
+              {
+                "name": "Ramees Najeeb",
+                "role": "Head of TT&C",
+                "linkedin": null
+              }
+            ]
+          }
+        ]
+      },
+      "nrc-2023": {
+        "title": "Team NRC 2023",
+        "status": "published",
+        "groups": [
+          {
+            "members": [
+              {
+                "name": "Charlie Roe",
+                "role": "Team Lead",
+                "photo": "/wp-content/uploads/2023/09/image.png",
+                "linkedin": null,
+                "note": "I am a drummer in a band that has featured on BBC Introducing"
+              },
+              {
+                "name": "Rowan Standing",
+                "role": "Deputy Team Lead",
+                "photo": "/wp-content/uploads/2023/09/image-1.png",
+                "linkedin": null,
+                "note": "I am an amateur photographer, recently into a 35mm film photography"
+              },
+              {
+                "name": "Carys Burchell",
+                "role": "Head of Structures",
+                "photo": "/wp-content/uploads/2023/09/image-2.png",
+                "linkedin": null,
+                "note": "I lived in Shanghai for 2 1/2 years"
+              },
+              {
+                "name": "Pijus Kemeklis",
+                "role": "Head of Recovery",
+                "photo": "/wp-content/uploads/2023/09/image-4.png",
+                "linkedin": null,
+                "note": "I am an amateur skydiver!"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "sponsors": {
+    "partnerships": [],
+    "tier1": [
+      {
+        "name": "Kunkune",
+        "logo": "/wp-content/uploads/2024/01/logo_kunkunetransparentbackground.png",
+        "blurb": "Electronics supply store making components accessible regardless of background or experience — competitive prices and fast shipping for student and hobbyist projects."
+      },
+      {
+        "name": "Easy Composites",
+        "logo": "/wp-content/uploads/2024/03/logo-4a2acc14e3f285ae0d75a4f45953f5d9.png",
+        "blurb": "Supplier of advanced composite materials, tools, and equipment for individuals, businesses, and educational institutions — from everyday stock to harder-to-find materials, plus guides and tutorials on their website and YouTube."
+      }
+    ],
+    "tier2": []
+  },
+  "aliases": {
+    "contact": "contact-us",
+    "nrc-2": "nationalrocketry",
+    "competitions": "mach/2022-2023",
+    "draft-mach-x": "mach/2023-2024",
+    "draft-nrc-2023-2024": "nationalrocketry/2023-2024",
+    "draft-race2space": "race2space",
+    "draft-ukseds-in-orbit-servicing-and-manufacturing": "ukseds-in-orbit-servicing-and-manufacturing",
+    "committee-2023-2024-copy": "committee-2025-2026",
+    "satellite": "satellite-design-competition",
+    "satellite-2": "satellite-design-competition"
+  }
+}

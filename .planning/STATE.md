@@ -5,13 +5,13 @@
 See: .planning/PROJECT.md (updated 2026-08-08)
 
 **Core value:** Find identity, missions by year, resources/contact, and sponsor value without WordPress friction.  
-**Current focus:** Human gates (chase + CF deploy). Chrome hygiene from 2026-08-29 audit is done.
+**Current focus:** Human gates (chase + CF deploy). 2026-09-02 UI audit engineering fixes landed.
 
 ## Current Position
 
 Phase: 5 of 5 (Host & handover)  
-Status: Engineering shipped; **2026-08-29 full-page visual audit** walked every user-reachable route  
-Last activity: 2026-09-02 — Deploy society site to https://perytonspace.github.io/website/ (org projects site untouched)
+Status: Engineering shipped; **2026-09-02 UI audit fixes** hid public authoring leaks and COMP-05 award/flyout defects  
+Last activity: 2026-09-10 — `PerytonSpace.github.io` main replaced with this rebuild (Jekyll kept on `archive-jekyll-projects`). Non-home content in `web/content/content.json`. Human: names, ethos sign-off, write-ups, CF deploy.
 
 Progress: Known scrape fold-in done · remaining years still Severin · a few chrome defects vs COMP-05 / public copy · deploy/cutover human-gated
 
@@ -35,9 +35,9 @@ Progress: Known scrape fold-in done · remaining years still Severin · a few ch
 - **Home:** 5 full-viewport snap slides (`HomeSnap.tsx`) — video → activities → achievements → sponsors → connect; ↑/↓ + dots; wheel threshold; footer hidden on home; scroll invitation on first slide after intro
 - **Home brand intro:** Once per load/reload — single header logo node expands center → collapses into header slot (0.5s hold); name+backdrop only as overlay; no clone/handoff
 - **Activities slide:** Mirrors burger groups via `getActivityNavGroups()` — Launch / Missions / StagWorks (not Rocketry/Satellite labels)
-- **Home control:** Logo is the home affordance (user preference); text “Home” removed from bar; logo top-centre in header
-- **Header:** Colourless frosted bar (`backdrop-filter` blur); drawer/backdrop **portaled to `document.body`** (fixed positioning broken inside backdrop-filter header)
-- **Nav drawer:** Full-viewport dark panel; comingSoon grey + tip; sponsors omitted when JSON empty
+- **Home control:** Logo in the left rail is the home affordance; click always returns to the hero video snap slide
+- **Chrome:** No top bar or burger. Persistent left rail only
+- **Nav rail:** Collapsed = logo + section icons (Launch / Missions / StagWorks / Our Team / About / Member Zone / Contact); expanded = sidebar tree. Hover or tap expands; click the page (or Escape) collapses. comingSoon grey + tip; sponsors omitted when JSON empty
 - **Layout:** `--ps-shell-max: 1600px`, `--ps-content-max: 1400px` (tokens in globals.css only)
 - **Style cascade:** `scrape.css` (WP blocks) then `globals.css` (wins); no Google Fonts runtime; Space Mono via `next/font`
 - **Colour:** White text on black (`--ps-fg/#fff` on `--ps-bg/#000`) enforced in globals; WP light backgrounds overridden
@@ -46,14 +46,15 @@ Progress: Known scrape fold-in done · remaining years still Severin · a few ch
 - **SEO:** `public/robots.txt`, `sitemap.xml`, Cloudflare `_headers` generated on build
 - **Units:** Landscape ≥720p (1280×720+) — logo/grid/intro proportions in `em`; hairlines stay `px`. Cards (`--ps-card-*`) size from `vw`/`svh`/`dvh` so they track the screen.
 - **Awards / video:** `site/awards.json`, `site/media.json` (hero cues; mobile landscape=`contain` / portrait=`cover`; orientation flips pause→DOM fit→paint→play at marked frames)
-- **Missions:** `missions/index.json` drives hubs, years, nav year children
-- **Content layout:** `scrape/` · `site/` · `missions/` · `team/{index,rosters}` · `pages/{committee,team,stagworks,rosters,…}`
+- **Missions:** `content.json` `missions[]` drives hubs, years, nav year children; 2+ photos in extraSection figures become a `gallery` carousel
+- **Fonts:** Space Mono only (next/font 400 + 700). Intermediate weights and leftover WP font-family classes are forced back to those cuts.
+- **Content layout:** `content.json` (all non-home structured) · `scrape/pages.json` (WP fallback) · `site/{awards,media}.json` (home only)
 - **Multi-year comps:** Year children shown in hover/focus flyout (burger + home activities); not stacked lists. Hub pages still list years.
-- **Team pages:** Committee years + mission team archives are structured (`team/rosters/*` + `personGroups`); scrape HTML overridden for those slugs. Portrait grid uses `--ps-*` elevated cards.
+- **Team pages:** Committee years + mission team archives are structured (`content.json` `team.rosters` + `personGroups`); scrape HTML overridden for those slugs. Portrait grid uses `--ps-*` elevated cards.
 - **NRC early years:** Legacy `/nrc-2/` “For 2021” / “For 2022” → `/nationalrocketry/2021-2022/` and `/nationalrocketry/2022-2023/` (`published`); `/nrc-2/` aliases hub.
 - **Mach-23:** Legacy `/competitions/` write-up → `/mach/2022-2023/`; `/competitions/` aliases that year page; draft media/tech as year `extraSections`.
 - **Mach-24 / NRC 2023–24 / Race2Space / IOSM:** Folded from WP `draft-*` pages in master.md scrape; draft URLs alias to structured years/hubs. Mission years may carry `extraSections` (same section types as hubs).
-- **Host:** Cloudflare Pages still the `peryton.space` target; GitHub Pages staging is https://perytonspace.github.io/website/ (`basePath=/website`). Org `github.io` stays the Jekyll projects site.
+- **Host:** Cloudflare Pages still the `peryton.space` target; org GitHub Pages is https://perytonspace.github.io/ (`PerytonSpace.github.io`); project Pages remains https://perytonspace.github.io/website/ (`basePath=/website`). Jekyll projects tree archived on `archive-jekyll-projects`.
 - **2026-08-29 committee:** 2025–2026 (Matt Pres) moved to historical; current is 2026–2027 from org chart (Carys Pres, Miruna VP, Sev Tres, Caitlin VP Launch, Jim VP Mission, Anya HoO, Vihanya Social)
 - **2026-08-29 card covers:** Competition snap / awards / year cards use matching people/hardware photos (`coverImage` / `activityCovers`); Race2Space, IOSM, Launch4Change, and unmatched years stay plain — no mismatched shots
 
@@ -66,23 +67,23 @@ Progress: Known scrape fold-in done · remaining years still Severin · a few ch
 - [x] Launch4Change hub — Durham / ARIA / 8 km / climate payload + `l4c-2.png`
 - [x] `team-mach-25.html` — Mach-24 accordion empty; Mach-23 is a duplicate of `/teammach23` (already structured)
 - [x] Stubs checked empty: `/satellite/`, `/satellite-2/` (coming soon only), `/777878-2/` (LinkedIn widget), merch form, empty StagWorks scrape, dated opportunities blog fluff
-- [x] Leftover unique scrape on overridden pages: Kunkune + Easy Composites → `sponsors.json`; Duke of Kent address → contact; Mach-23 `/competitions/` gallery extras
+- [x] Leftover unique scrape on overridden pages: Kunkune + Easy Composites → `content.json` sponsors; Duke of Kent address → contact; Mach-23 `/competitions/` gallery extras
 
 **Agent-doable chrome hygiene (found 2026-08-29 visual audit — matches locked product rules, not new scope):**
 
 - [x] **COMP-05:** `placeholder` years are live links in burger + home flyouts (`yearIsNavigable` treats placeholder as live). Grey + “Coming soon” on hover; do not present as live.
-- [x] **Public copy:** placeholder year pages tell visitors to edit `web/content/missions/index.json` — authoring note, not visitor copy.
+- [x] **Public copy:** placeholder year pages tell visitors to edit `web/content/content.json` — authoring note, not visitor copy.
 - [x] **Hub badges:** `buildMissionHubPage` hardcodes `status: "placeholder"`, so NRC/SDC/Mach hubs with real intros still show “Placeholder — copy TBD”.
 - [x] **Drawer:** “Header prototype: drawer · flip `headerPrototype` in `site.ts`” is visible to every visitor. Keep the prototype switch; hide the code note until committee picks.
 - [x] **Current committee URL:** live slug is still WP leftover `/committee-2023-2024-copy/` (title is 2025–2026).
-- [x] **Repo:** rebuild lives in [PerytonSpace/website](https://github.com/PerytonSpace/website) (public so GitHub Pages works on the free org plan). Org `github.io` stays the Jekyll projects site.
+- [x] **Repo:** rebuild lives in [PerytonSpace/website](https://github.com/PerytonSpace/website) and [PerytonSpace.github.io](https://github.com/PerytonSpace/PerytonSpace.github.io) (org root Pages).
 
 **Human-gated (visually confirmed still open):**
 
 - [ ] Cloudflare account → first production deploy (record URL in HOSTING.md)
-- [ ] Committee: `headerPrototype` drawer vs rail (both still available)
+- [x] Committee: `headerPrototype` drawer vs rail — superseded 2026-09-05 (no top bar; left rail only)
 - [ ] Ethos copy (Carys / Severin) — About `#ethos` still says wording TBD before launch
-- [x] `formEmbedUrl` in contact-us.json — Microsoft Forms loads (Subject / Name / Message / Email + Submit)
+- [x] `formEmbedUrl` on contact-us in `content.json` — Microsoft Forms loads (Subject / Name / Message / Email + Submit)
 - [ ] Confirm names: supervisors still “Chris” / “Andrew”; wellbeing is a literal Placeholder card; empty “University wellbeing (SU)” heading
 - [ ] Confirm surnames for Miruna / Anya / Vihanya; 2026–2027 committee is live (Carys Pres); 2025–2026 is historical
 - [ ] LinkedIn opt-ins — none shown on committee/team cards
@@ -102,11 +103,11 @@ Cutover still blocked on chase + CF credentials. Chrome hygiene from the visual 
 | Intake | Space / uncertain pages | Deferred |
 | v2 | 3JS CAD hotspots | Deferred |
 | Design | Full brand redesign | Deferred (interim tokens + layout live) |
-| Scrape junk | hello-world, about-2, category/*, satellite stub, LinkedIn widget, dated blog | Leave / ignore |
+| Scrape junk | hello-world, about-2, category/*, dated blog | Leave / ignore (`/satellite` aliases SDC hub; `/777878-2` 404s) |
 
 ## Session Continuity
 
-Last session: 2026-08-30  
-Stopped at: Drawer year-flyout “Coming soon” hover aligned (tip below year, not clipped)  
+Last session: 2026-09-10  
+Stopped at: Org `PerytonSpace.github.io` now hosts this rebuild at https://perytonspace.github.io/  
 Resume file: None  
-Next action: Humans still own PREDEPLOY_CHASE + CF/`peryton.space` cutover; surnames for Miruna/Anya/Vihanya if they want full names on cards
+Next action: Humans still own PREDEPLOY_CHASE + CF/`peryton.space` cutover; surnames for Miruna/Anya/Vihanya and supervisor/wellbeing names if they want them on cards. If the technical projects site should stay live, republish `archive-jekyll-projects` elsewhere and restore `projects.peryton.space` DNS.

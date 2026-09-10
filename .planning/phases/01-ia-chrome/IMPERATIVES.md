@@ -5,8 +5,8 @@
 
 ## Live behaviour (synced)
 
-1. Left burger menu; drawer portaled to `document.body`
-2. **Logo** is the home control (text Home removed by later design choice)
+1. Persistent left rail only (no top bar / burger); hover or tap expands, click page collapses
+2. **Logo** at top of the rail is the home control (hero video slide)
 3. Nav matches `contracts/ROUTE_MAP.md` / `getNavigation()`
 4. About + `#ethos` placeholder
 5. Prototypes `drawer` / `rail` still switchable (`PROTOTYPES.md`)

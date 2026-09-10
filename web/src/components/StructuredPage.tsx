@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { ImageCarousel } from "@/components/ImageCarousel";
 import { withBase, withBaseHtml } from "@/lib/basePath";
 import { cardCoverClass, cardCoverVars } from "@/lib/cardCover";
+import { asGalleryImages } from "@/lib/gallery";
 import { yearHref, yearIsNavigable } from "@/lib/missions";
 import {
   resolveMissionYears,
@@ -13,7 +15,15 @@ import {
   type TeamPerson,
 } from "@/lib/structured";
 
+function isAuthoringNote(note?: string): boolean {
+  if (!note) return true;
+  return /tbd|to be confirmed|before deploy|assumed ok|replace with|pending reply|ask before adding/i.test(
+    note,
+  );
+}
+
 function PersonCard({ person }: { person: TeamPerson }) {
+  const publicNote = person.note && !isAuthoringNote(person.note) ? person.note : null;
   return (
     <li className="ps-person-card">
       {person.photo ? (
@@ -25,10 +35,12 @@ function PersonCard({ person }: { person: TeamPerson }) {
           height={160}
           loading="lazy"
         />
-      ) : null}
+      ) : (
+        <span className="ps-person-photo ps-person-photo--empty" aria-hidden />
+      )}
       <h3 className="ps-person-name">{person.name}</h3>
       <p className="ps-person-role">{person.role}</p>
-      {person.note ? <p className="ps-person-note">{person.note}</p> : null}
+      {publicNote ? <p className="ps-person-note">{publicNote}</p> : null}
       {person.linkedin ? (
         <a
           className="ps-person-link"
@@ -75,6 +87,32 @@ function Section({ section }: { section: StructuredSection }) {
           }}
         />
       );
+    case "image": {
+      const src = String(props.src ?? "");
+      if (!src) return null;
+      return (
+        <figure className="ps-figure">
+          <img
+            src={withBase(src)}
+            alt={String(props.alt ?? "")}
+            loading="lazy"
+          />
+        </figure>
+      );
+    }
+    case "gallery": {
+      const images = asGalleryImages(props.images);
+      if (images.length < 2) {
+        const only = images[0];
+        if (!only) return null;
+        return (
+          <figure className="ps-figure">
+            <img src={withBase(only.src)} alt={only.alt} loading="lazy" />
+          </figure>
+        );
+      }
+      return <ImageCarousel images={images} />;
+    }
     case "placeholder":
       return (
         <div className="ps-placeholder">
@@ -199,11 +237,18 @@ function Section({ section }: { section: StructuredSection }) {
           {tiers.map((tier) => (
             <section key={tier.id} className="ps-tier">
               <h2 className="ps-tier-title">{tier.title}</h2>
-              <ul>
+              <ul className="ps-sponsor-grid">
                 {tier.entries.map((e) => (
-                  <li key={e.name}>
+                  <li key={e.name} className="ps-sponsor-card">
+                    {e.logo ? (
+                      <img
+                        className="ps-sponsor-logo"
+                        src={withBase(e.logo)}
+                        alt=""
+                      />
+                    ) : null}
                     <strong>{e.name}</strong>
-                    {e.blurb ? ` — ${e.blurb}` : null}
+                    {e.blurb ? <span>{e.blurb}</span> : null}
                   </li>
                 ))}
               </ul>
@@ -253,9 +298,6 @@ export function StructuredPageView({ page }: { page: StructuredPageData }) {
   return (
     <main className="ps-structured" id="wp--skip-link--target">
       <div className="ps-structured-inner">
-        {page.status === "placeholder" ? (
-          <p className="ps-status-pill">Placeholder — copy TBD</p>
-        ) : null}
         {page.sections.map((section, i) => (
           <Section key={section.id ?? `${section.type}-${i}`} section={section} />
         ))}

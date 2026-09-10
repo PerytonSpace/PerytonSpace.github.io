@@ -1,5 +1,6 @@
-import missionsFile from "../../content/missions/index.json";
+import { catalog } from "@/lib/catalog";
 import type { StructuredPage, StructuredSection } from "@/lib/content-types";
+import { liftRichtextGalleries } from "@/lib/gallery";
 
 type MissionNavLink = {
   label: string;
@@ -50,7 +51,10 @@ type MissionsFile = {
   intake: Record<string, IntakeItem>;
 };
 
-const data = missionsFile as MissionsFile;
+const data = {
+  missions: catalog.missions,
+  intake: catalog.intake,
+} as MissionsFile;
 
 export function getMissions(): Mission[] {
   return data.missions;
@@ -71,6 +75,24 @@ export function yearHref(mission: Mission, year: MissionYear): string {
 /** Published years are linked; placeholder / comingSoon stay grey in menus (COMP-05). */
 export function yearIsNavigable(year: MissionYear): boolean {
   return year.status === "published" || year.status === "live";
+}
+
+/**
+ * Drop hrefs that point at unpublished mission years (home awards, strips).
+ * Hubs and non-mission URLs pass through.
+ */
+export function publicAwardHref(href?: string): string | undefined {
+  if (!href) return undefined;
+  const path = href.replace(/^\/|\/$/g, "");
+  const slash = path.indexOf("/");
+  if (slash <= 0) return href;
+  const hub = path.slice(0, slash);
+  const yearId = path.slice(slash + 1).replace(/\/$/, "");
+  const mission = getMissionByHubSlug(hub);
+  if (!mission) return href;
+  const year = mission.years.find((y) => y.id === yearId);
+  if (year && !yearIsNavigable(year)) return undefined;
+  return href;
 }
 
 /** Nav children for a mission hub (years + comingSoon). */
@@ -108,7 +130,7 @@ export function buildMissionHubPage(mission: Mission): StructuredPage {
   const sections: StructuredSection[] = [
     { type: "heading", props: { text: mission.title, level: 1 } },
     { type: "richtext", props: { html: mission.introHtml } },
-    ...(mission.extraSections ?? []),
+    ...liftRichtextGalleries(mission.extraSections ?? []),
   ];
 
   if (mission.years.length) {
@@ -185,7 +207,7 @@ export function buildMissionYearPage(
           html: `<p>${year.summary}</p>${awardHtml}${highlightsHtml}`,
         },
       },
-      ...(year.extraSections ?? []),
+      ...liftRichtextGalleries(year.extraSections ?? []),
       back,
     ],
   };

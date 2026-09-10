@@ -139,7 +139,7 @@ function filterSponsorsFromNav(items: NavItem[]): NavItem[] {
   });
 }
 
-/** Navigation with sponsors hidden when sponsors.json is empty. */
+/** Navigation with sponsors hidden when content.json sponsors are empty. */
 export function getNavigation(): NavItem[] {
   return filterSponsorsFromNav(baseNavigation);
 }

@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useId, useState } from "react";
-import { createPortal } from "react-dom";
+import { usePathname } from "next/navigation";
+import { useEffect, useId, useRef, useState, type MouseEvent } from "react";
+import { NavIcon } from "@/components/NavIcons";
+import { requestHomeTop } from "@/lib/home";
 import {
   getNavigation,
-  headerPrototype,
   isYearNavChildren,
   site,
   type NavLink,
@@ -14,6 +15,37 @@ import {
 
 function isComingSoon(item: { status?: string }): boolean {
   return item.status === "comingSoon";
+}
+
+function normalizePath(path: string): string {
+  const bare = path.split("#")[0] ?? path;
+  if (!bare || bare === "/") return "/";
+  return bare.replace(/\/+$/, "") || "/";
+}
+
+function hrefMatches(href: string, path: string): boolean {
+  const a = normalizePath(href);
+  const b = normalizePath(path);
+  if (a === "/") return b === "/";
+  return b === a || b.startsWith(`${a}/`);
+}
+
+function itemIsActive(item: NavLink, path: string): boolean {
+  if (item.href && hrefMatches(item.href, path)) return true;
+  return item.children?.some((child) => itemIsActive(child, path)) ?? false;
+}
+
+/** First live landing for a section (group → first live child). */
+function sectionHref(item: NavLink): string | undefined {
+  if (item.href && !isComingSoon(item)) return item.href;
+  const first = item.children?.find(
+    (child) => child.href && !isComingSoon(child),
+  );
+  return first?.href;
+}
+
+function canHoverFine(): boolean {
+  return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 }
 
 function NavLeaf({
@@ -140,30 +172,40 @@ function NavBranch({
   );
 }
 
-function BurgerIcon({ open }: { open: boolean }) {
+function RailIcon({
+  item,
+  pathname,
+}: {
+  item: NavLink;
+  pathname: string;
+}) {
+  const href = sectionHref(item);
+  const active = itemIsActive(item, pathname);
+  const className = `ps-nav-icon${active ? " is-active" : ""}`;
+
   return (
-    <span className={`ps-burger-icon${open ? " is-open" : ""}`} aria-hidden>
-      <span />
-      <span />
-      <span />
-    </span>
+    <li>
+      <span className={className} aria-hidden>
+        <NavIcon label={item.label} />
+        <span className="ps-nav-icon-tip">{item.label}</span>
+      </span>
+    </li>
   );
 }
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const panelId = useId();
   const nav = getNavigation();
-  const prototype = headerPrototype;
+  const pathname = usePathname() ?? "/";
+  const leaveTimer = useRef<number | null>(null);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
+    document.body.classList.toggle("ps-nav-expanded", open);
     document.body.classList.toggle("ps-nav-open", open);
-    return () => document.body.classList.remove("ps-nav-open");
+    return () => {
+      document.body.classList.remove("ps-nav-expanded", "ps-nav-open");
+    };
   }, [open]);
 
   useEffect(() => {
@@ -174,105 +216,128 @@ export function SiteHeader() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const close = () => setOpen(false);
+  useEffect(() => {
+    return () => {
+      if (leaveTimer.current != null) window.clearTimeout(leaveTimer.current);
+    };
+  }, []);
 
-  const drawer =
-    mounted &&
-    createPortal(
-      <>
-        <button
-          type="button"
-          className={`ps-nav-backdrop${open ? " is-open" : ""}`}
-          aria-label="Close menu"
-          tabIndex={open ? 0 : -1}
-          onClick={close}
-        />
-        <nav
-          id={panelId}
-          className={`ps-nav-panel${open ? " is-open" : ""}`}
-          aria-label="Main navigation"
-          aria-hidden={!open}
-          inert={!open ? true : undefined}
-        >
-          <div className="ps-nav-panel-inner">
-            <ul className="ps-nav-list">
-              <li className="ps-nav-item">
-                <Link
-                  className="ps-nav-link ps-nav-link--home"
-                  href="/"
-                  aria-label={`${site.name} — Home`}
-                  onClick={close}
-                >
-                  <Image
-                    src={site.logo}
-                    alt=""
-                    width={40}
-                    height={47}
-                    className="ps-nav-home-logo"
-                  />
-                  <span>{site.name}</span>
-                </Link>
-              </li>
-              {nav.map((item) => (
-                <NavBranch
-                  key={item.label}
-                  item={item}
-                  onNavigate={close}
-                />
-              ))}
-            </ul>
-          </div>
-        </nav>
-      </>,
-      document.body,
-    );
+  const expand = () => {
+    if (leaveTimer.current != null) {
+      window.clearTimeout(leaveTimer.current);
+      leaveTimer.current = null;
+    }
+    setOpen(true);
+  };
+
+  const collapse = () => {
+    if (leaveTimer.current != null) {
+      window.clearTimeout(leaveTimer.current);
+      leaveTimer.current = null;
+    }
+    setOpen(false);
+  };
+
+  const collapseSoon = () => {
+    if (leaveTimer.current != null) window.clearTimeout(leaveTimer.current);
+    leaveTimer.current = window.setTimeout(() => {
+      leaveTimer.current = null;
+      setOpen(false);
+    }, 120);
+  };
+
+  const goToHomeHero = (e: MouseEvent<HTMLAnchorElement>) => {
+    if (normalizePath(pathname) === "/") {
+      e.preventDefault();
+      requestHomeTop();
+    }
+    collapse();
+  };
+
+  const onNavEnter = () => {
+    if (canHoverFine()) expand();
+  };
+
+  const onNavLeave = () => {
+    if (canHoverFine()) collapseSoon();
+  };
+
+  const onNavClick = (e: MouseEvent<HTMLElement>) => {
+    if (open) return;
+    if ((e.target as HTMLElement).closest(".ps-nav-logo")) return;
+    e.preventDefault();
+    expand();
+  };
 
   return (
     <>
-      <header
-        className={`ps-header ps-header--${prototype}`}
-        data-prototype={prototype}
+      <button
+        type="button"
+        className={`ps-nav-backdrop${open ? " is-open" : ""}`}
+        aria-label="Collapse menu"
+        aria-hidden={!open}
+        tabIndex={open ? 0 : -1}
+        inert={!open ? true : undefined}
+        onClick={collapse}
+      />
+      <nav
+        id={panelId}
+        className={`ps-nav-panel${open ? " is-open" : ""}`}
+        aria-label={open ? "Main navigation" : "Open main navigation"}
+        aria-expanded={open}
+        tabIndex={open ? undefined : 0}
+        onMouseEnter={onNavEnter}
+        onMouseLeave={onNavLeave}
+        onFocus={(e) => {
+          if ((e.target as HTMLElement).closest(".ps-nav-logo")) return;
+          expand();
+        }}
+        onClick={onNavClick}
       >
-        <div className="ps-header-bar">
-          <button
-            type="button"
-            className="ps-burger"
-            aria-expanded={open}
-            aria-controls={panelId}
-            aria-label={open ? "Close menu" : "Open menu"}
-            onClick={() => setOpen((v) => !v)}
-          >
-            <BurgerIcon open={open} />
-          </button>
-
+        <div className="ps-nav-panel-inner">
           <Link
             href="/"
-            className="ps-home-link"
+            className="ps-nav-logo"
             rel="home"
             aria-label={`${site.name} — Home`}
-            onClick={close}
+            onClick={goToHomeHero}
           >
             <Image
               id="ps-header-logo"
               src={site.logo}
               alt=""
-              width={prototype === "rail" ? 48 : 56}
-              height={prototype === "rail" ? 56 : 66}
+              width={56}
+              height={66}
               className="ps-logo"
               priority
             />
+            <span className="ps-nav-logo-name">{site.name}</span>
           </Link>
 
-          {prototype === "rail" ? (
-            <p className="ps-header-tagline" aria-hidden="true">
-              {site.tagline}
-            </p>
-          ) : (
-            <span className="ps-header-spacer" aria-hidden="true" />
-          )}
+          <ul
+            className="ps-nav-icons"
+            hidden={open}
+            inert={open ? true : undefined}
+          >
+            {nav.map((item) => (
+              <RailIcon key={item.label} item={item} pathname={pathname} />
+            ))}
+          </ul>
+          <ul
+            className="ps-nav-list"
+            hidden={!open}
+            inert={!open ? true : undefined}
+          >
+            {nav.map((item) => (
+              <NavBranch
+                key={item.label}
+                item={item}
+                onNavigate={collapse}
+              />
+            ))}
+          </ul>
         </div>
-      </header>
-      {drawer}
+      </nav>
     </>
   );
 }

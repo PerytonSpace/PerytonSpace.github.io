@@ -2,7 +2,7 @@
 
 **Status:** Chosen + documented + local static smoke-tested  
 **Date:** 2026-08-08  
-**Production deploy:** Awaits Cloudflare account / API token (human). Source of truth for the rebuild is [`PerytonSpace/website`](https://github.com/PerytonSpace/website). GitHub Pages preview: [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/) (project site; `NEXT_PUBLIC_BASE_PATH=/website`). The org [`PerytonSpace.github.io`](https://github.com/PerytonSpace/PerytonSpace.github.io) repo remains the Jekyll projects site at [projects.peryton.space](https://projects.peryton.space).
+**Production deploy:** Awaits Cloudflare account / API token (human). Source of truth for the rebuild is [`PerytonSpace/website`](https://github.com/PerytonSpace/website). Org GitHub Pages: [https://perytonspace.github.io/](https://perytonspace.github.io/) ([`PerytonSpace.github.io`](https://github.com/PerytonSpace/PerytonSpace.github.io); root site, empty `basePath`). Project Pages on `website` still publishes [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/). Former Jekyll projects site is on branch `archive-jekyll-projects` in the org Pages repo (custom domain `projects.peryton.space` was removed from Pages so it does not serve this rebuild).
 
 ## Choice
 
@@ -55,13 +55,17 @@ npx wrangler pages deploy out --project-name=peryton-space
 - Build command: `npm run build`
 - Output directory: `out`
 
-### Option C — GitHub Pages (this repo)
+### Option C — GitHub Pages
 
-Repo: [PerytonSpace/website](https://github.com/PerytonSpace/website). Workflow `.github/workflows/pages.yml` runs `cd web && npm ci && npm run build` and deploys `web/out`.
+Same workflow `.github/workflows/pages.yml` (`cd web && npm ci && npm run build` → `web/out`) in:
+
+- [`PerytonSpace.github.io`](https://github.com/PerytonSpace/PerytonSpace.github.io) → [https://perytonspace.github.io/](https://perytonspace.github.io/)
+- [`PerytonSpace/website`](https://github.com/PerytonSpace/website) → [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/)
 
 ## Not done until human step
 
 - [x] First GitHub Pages deploy path: `PerytonSpace/website` → https://perytonspace.github.io/website/
+- [x] Org Pages repo `PerytonSpace.github.io` now holds this rebuild → https://perytonspace.github.io/ (Jekyll tree archived on `archive-jekyll-projects`)
 - [ ] Cloudflare account access confirmed
 - [ ] First Cloudflare production deploy URL recorded here
 - [ ] Custom domain attached (see CUTOVER.md)

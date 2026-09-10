@@ -112,3 +112,11 @@ export function isOrientationBoundary(
   if (i <= 0) return true;
   return annotations[i - 1]!.orientation !== cue.orientation;
 }
+
+/** Header logo / Home controls ask HomeSnap to return to the hero slide. */
+export const HOME_TOP_EVENT = "ps-home-top";
+
+export function requestHomeTop(): void {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(new Event(HOME_TOP_EVENT));
+}

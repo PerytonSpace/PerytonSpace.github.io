@@ -1,41 +1,65 @@
 # Contract: Content authoring
 
-**Status:** Spec (implement in Phase 0)  
-**Consumers:** `web/src/lib/content.ts`, future structured loaders, Severin edits via GitHub
+**Status:** Live  
+**Consumers:** `web/src/lib/catalog.ts`, `structured.ts`, `missions.ts`, `sponsors.ts`; Severin edits via GitHub
 
 ## Principles
 
-1. Scraped WordPress HTML in `web/content/scrape/pages.json` remains valid until a page is migrated.
-2. **New** and **rewritten** pages use structured JSON (or MDX later) — not pasted WP HTML.
-3. Schema is the contract agents and humans must satisfy before UI work claims "done."
+1. **Non-home content has one source:** `web/content/content.json`.
+2. Homepage stays out of that file: slides in `HomeSnap.tsx`, awards in `site/awards.json`, hero video in `site/media.json`.
+3. Scraped WordPress HTML in `web/content/scrape/pages.json` remains a fallback until a slug is in `content.json`.
+4. Schema is the contract agents and humans must satisfy before UI work claims "done."
 
 ## Layout (live)
 
 ```text
 web/content/
+  content.json                # ALL non-home structured content
   scrape/pages.json           # legacy WP HTML (regen: npm run prepare-content)
   site/
-    awards.json
-    media.json                # hero video + annotations + activityCovers
-    sponsors.json
-  missions/index.json
-  team/
-    index.json                # supervisors, wellbeing, historicalCommittees
-    rosters/<slug>.json       # person groups for personGroups sections
-  pages/
-    about.json
-    contact-us.json
-    member-zone.json
-    …
-    committee/                # committee shells
-    team/                     # supervisors / wellbeing shells
-    stagworks/                # StagWorks shells
-    rosters/                  # roster page shells
+    awards.json               # home awards strip only
+    media.json                # home hero video + annotations + activityCovers
 ```
 
-Route slug is the JSON `slug` field (file path is for humans). Register new shells/rosters in `web/src/lib/structured.ts`.
+Do not add new `pages/*.json`, `missions/index.json`, or `team/rosters/*.json`. Edit `content.json`.
 
-## Minimal page schema (draft)
+## Master file (`peryton.content`)
+
+```json
+{
+  "$id": "peryton.content",
+  "pages": [],
+  "missions": [],
+  "intake": {},
+  "team": {
+    "supervisors": [],
+    "wellbeing": [],
+    "historicalCommittees": [],
+    "rosters": {}
+  },
+  "sponsors": {
+    "partnerships": [],
+    "tier1": [],
+    "tier2": []
+  },
+  "aliases": {}
+}
+```
+
+| Key | Role |
+|-----|------|
+| `pages` | Structured shells (About, Contact, Member Zone, committee, StagWorks, roster pages, …) |
+| `missions` | Competition hubs + years (synthesized into pages by `missions.ts`) |
+| `intake` | Severin write-up checklist (not shown to visitors) |
+| `team.supervisors` / `team.wellbeing` | Person grids via `personGrid` `source` |
+| `team.historicalCommittees` | Committee year list via `yearList` |
+| `team.rosters.<slug>` | Person groups via `personGroups` `source: team.rosters.<slug>` |
+| `sponsors` | Partnerships / Tier 1 / Tier 2. Empty arrays ⇒ hide Sponsors nav + section |
+| `aliases` | Legacy WP slugs → canonical `pages[].slug` or mission hub/year slug |
+
+Route slug is `pages[].slug` (or `{hubSlug}` / `{hubSlug}/{year.id}` for missions). New pages go in `pages[]`; new people go in `team`; no extra TypeScript import.
+
+## Page schema (`peryton.page`)
 
 ```json
 {
@@ -58,6 +82,7 @@ Route slug is the JSON `slug` field (file path is for humans). Register new shel
               "heading",
               "richtext",
               "image",
+              "gallery",
               "cta",
               "personGrid",
               "personGroups",
@@ -77,7 +102,9 @@ Route slug is the JSON `slug` field (file path is for humans). Register new shel
 }
 ```
 
-## Mission-by-year schema (draft)
+## Mission-by-year schema (`peryton.missionYear`)
+
+Lives under `missions[].years[]` in `content.json`.
 
 ```json
 {
@@ -93,7 +120,7 @@ Route slug is the JSON `slug` field (file path is for humans). Register new shel
     "awards": { "type": "array", "items": { "type": "string" } },
     "extraSections": {
       "type": "array",
-      "description": "Optional structured sections (heading/richtext/…) after summary; same section types as pages",
+      "description": "Optional structured sections after summary; same section types as pages",
       "items": { "$ref": "#/definitions/section" }
     },
     "teamHref": { "type": "string" },
@@ -108,7 +135,22 @@ Route slug is the JSON `slug` field (file path is for humans). Register new shel
 
 Hubs already support `extraSections` on the mission object; year pages render `year.extraSections` the same way via `buildMissionYearPage`.
 
-## Team member schema (draft)
+Two or more `<img>` inside `<figure>` blocks in a year/hub `richtext` extraSection are lifted into a `gallery` carousel at render time (`liftRichtextGalleries`). You can also author a gallery directly:
+
+```json
+{
+  "type": "gallery",
+  "props": {
+    "images": [
+      { "src": "/wp-content/uploads/…/photo.jpg", "alt": "Mach-23 rocket" }
+    ]
+  }
+}
+```
+
+`image` is a single photo: `{ "type": "image", "props": { "src": "/…", "alt": "" } }`. Team portrait grids stay grids (not carousels).
+
+## Team member schema (`peryton.teamMember`)
 
 ```json
 {
@@ -129,24 +171,16 @@ Hubs already support `extraSections` on the mission object; year pages render `y
 }
 ```
 
-## Team data
-
-- `web/content/site/awards.json` — highlight cards; optional `coverImage` when a matching competition photo exists
-- `web/content/team/rosters/<slug>.json` — grouped members; referenced as `team.rosters.<slug>` from `personGroups`
-- Page shells under `web/content/pages/rosters/` (and committee/) only define title/sections
-
-Committee year pages and mission team archives are structured JSON (not scrape HTML).
-
 ## Loader rules
 
-1. If structured file exists for slug → render via section components.
-2. Else → fall back to `pages.json` HTML (`PageContent`).
+1. If `content.json` has a page (or synthesized mission page) for the slug → render via section components.
+2. Else → fall back to scrape `pages.json` HTML (`PageContent`).
 3. Never delete scrape entries until structured page verified.
 
-## Sponsors JSON visibility rule
+## Sponsors visibility rule
 
-- File `web/content/site/sponsors.json` with `partnerships[]`, `tier1[]`, `tier2[]`.
-- If file missing **or** all arrays empty → UI **hides** Sponsors nav + section.
+- `content.json` → `sponsors` with `partnerships[]`, `tier1[]`, `tier2[]`.
+- If all arrays empty → UI **hides** Sponsors nav + section.
 - Non-empty → show Partnerships / Tier 1 / Tier 2 as populated.
 
 ## Non-goals (this contract)
@@ -154,3 +188,4 @@ Committee year pages and mission team archives are structured JSON (not scrape H
 - Live CMS UI
 - WordPress sync
 - Auth-gated member content (Member Zone is public; email/phone access requests elsewhere)
+- Putting homepage slides/awards/video into `content.json`

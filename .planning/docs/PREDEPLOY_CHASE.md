@@ -7,7 +7,7 @@
 |------|--------|--------|
 | Header prototype `drawer` vs `rail` | Committee | Open |
 | Ethos final copy | Carys / Severin | Open |
-| Microsoft Forms embed URL → `web/content/pages/contact-us.json` (`formEmbedUrl`) | Jim / Severin | Done |
+| Microsoft Forms embed URL → `web/content/content.json` contact-us `formEmbedUrl` | Jim / Severin | Done |
 | Supervisor display names | Severin | Open |
 | Wellbeing champion names | Severin / champions | Open |
 | LinkedIn opt-ins | Severin (ask alumni) | Open |

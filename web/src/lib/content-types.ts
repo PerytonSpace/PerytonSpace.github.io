@@ -2,6 +2,7 @@ export type SectionType =
   | "heading"
   | "richtext"
   | "image"
+  | "gallery"
   | "cta"
   | "personGrid"
   | "personGroups"
