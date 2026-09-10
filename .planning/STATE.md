@@ -11,7 +11,7 @@ See: .planning/PROJECT.md (updated 2026-08-08)
 
 Phase: 5 of 5 (Host & handover)  
 Status: Engineering shipped; **2026-09-02 UI audit fixes** hid public authoring leaks and COMP-05 award/flyout defects  
-Last activity: 2026-09-10 — `PerytonSpace.github.io` main replaced with this rebuild (Jekyll kept on `archive-jekyll-projects`). Non-home content in `web/content/content.json`. Human: names, ethos sign-off, write-ups, CF deploy.
+Last activity: 2026-09-10 — Restored Pages custom domain `projects.peryton.space` onto the society rebuild. Human: names, ethos sign-off, write-ups, CF deploy.
 
 Progress: Known scrape fold-in done · remaining years still Severin · a few chrome defects vs COMP-05 / public copy · deploy/cutover human-gated
 
@@ -54,7 +54,7 @@ Progress: Known scrape fold-in done · remaining years still Severin · a few ch
 - **NRC early years:** Legacy `/nrc-2/` “For 2021” / “For 2022” → `/nationalrocketry/2021-2022/` and `/nationalrocketry/2022-2023/` (`published`); `/nrc-2/` aliases hub.
 - **Mach-23:** Legacy `/competitions/` write-up → `/mach/2022-2023/`; `/competitions/` aliases that year page; draft media/tech as year `extraSections`.
 - **Mach-24 / NRC 2023–24 / Race2Space / IOSM:** Folded from WP `draft-*` pages in master.md scrape; draft URLs alias to structured years/hubs. Mission years may carry `extraSections` (same section types as hubs).
-- **Host:** Cloudflare Pages still the `peryton.space` target; org GitHub Pages is https://perytonspace.github.io/ (`PerytonSpace.github.io`); project Pages remains https://perytonspace.github.io/website/ (`basePath=/website`). Jekyll projects tree archived on `archive-jekyll-projects`.
+- **Host:** Cloudflare Pages still the `peryton.space` target; org GitHub Pages is https://projects.peryton.space/ (`PerytonSpace.github.io`); project Pages remains https://perytonspace.github.io/website/ (`basePath=/website`). Jekyll projects tree archived on `archive-jekyll-projects`.
 - **2026-08-29 committee:** 2025–2026 (Matt Pres) moved to historical; current is 2026–2027 from org chart (Carys Pres, Miruna VP, Sev Tres, Caitlin VP Launch, Jim VP Mission, Anya HoO, Vihanya Social)
 - **2026-08-29 card covers:** Competition snap / awards / year cards use matching people/hardware photos (`coverImage` / `activityCovers`); Race2Space, IOSM, Launch4Change, and unmatched years stay plain — no mismatched shots
 
@@ -108,6 +108,6 @@ Cutover still blocked on chase + CF credentials. Chrome hygiene from the visual 
 ## Session Continuity
 
 Last session: 2026-09-10  
-Stopped at: Org `PerytonSpace.github.io` now hosts this rebuild at https://perytonspace.github.io/  
+Stopped at: `projects.peryton.space` custom domain restored on org Pages  
 Resume file: None  
-Next action: Humans still own PREDEPLOY_CHASE + CF/`peryton.space` cutover; surnames for Miruna/Anya/Vihanya and supervisor/wellbeing names if they want them on cards. If the technical projects site should stay live, republish `archive-jekyll-projects` elsewhere and restore `projects.peryton.space` DNS.
+Next action: Humans still own PREDEPLOY_CHASE + CF/`peryton.space` cutover; surnames for Miruna/Anya/Vihanya and supervisor/wellbeing names if they want them on cards. Jekyll projects tree remains on `archive-jekyll-projects` if it needs a new home.

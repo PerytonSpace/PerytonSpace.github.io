@@ -2,7 +2,7 @@
 
 **Status:** Chosen + documented + local static smoke-tested  
 **Date:** 2026-08-08  
-**Production deploy:** Awaits Cloudflare account / API token (human). Source of truth for the rebuild is [`PerytonSpace/website`](https://github.com/PerytonSpace/website). Org GitHub Pages: [https://perytonspace.github.io/](https://perytonspace.github.io/) ([`PerytonSpace.github.io`](https://github.com/PerytonSpace/PerytonSpace.github.io); root site, empty `basePath`). Project Pages on `website` still publishes [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/). Former Jekyll projects site is on branch `archive-jekyll-projects` in the org Pages repo (custom domain `projects.peryton.space` was removed from Pages so it does not serve this rebuild).
+**Production deploy:** Awaits Cloudflare account / API token (human). Source of truth for the rebuild is [`PerytonSpace/website`](https://github.com/PerytonSpace/website). Org GitHub Pages: [https://projects.peryton.space/](https://projects.peryton.space/) ([`PerytonSpace.github.io`](https://github.com/PerytonSpace/PerytonSpace.github.io); also [https://perytonspace.github.io/](https://perytonspace.github.io/)). Project Pages on `website` still publishes [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/). Former Jekyll projects tree is on branch `archive-jekyll-projects`.
 
 ## Choice
 
