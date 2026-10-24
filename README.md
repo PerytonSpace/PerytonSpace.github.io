@@ -1,28 +1,13 @@
-# Peryton Space website
+# PerytonSpace.github.io
 
-Public society site: Next.js static export in `web/`. Content is JSON in Git (see `.planning/docs/AUTHORING.md`).
+Serves **[projects.peryton.space](https://projects.peryton.space)** (GitHub Pages).
 
-GitHub: [PerytonSpace/website](https://github.com/PerytonSpace/website) and [PerytonSpace.github.io](https://github.com/PerytonSpace/PerytonSpace.github.io) (same site; org Pages is the root URL).
+This is **not** the society marketing site. Production site source is [`PerytonSpace/website`](https://github.com/PerytonSpace/website) → [peryton.space](https://peryton.space).
 
-## Local
+## Status
 
-```bash
-cd web
-npm ci
-npm run dev
-```
+- **Now:** Static placeholder only.
+- **Later (budget-gated):** Authenticated internal portal for society resources.
+- **Archives:** `archive-jekyll-projects` (old Jekyll tree), `archive-next-marketing` (former Next.js mirror of the society site).
 
-Open http://localhost:3000
-
-## Deploy
-
-GitHub Actions builds `web/` and publishes `web/out` to GitHub Pages on push to `main`: [https://perytonspace.github.io/](https://perytonspace.github.io/) (org repo) and [https://perytonspace.github.io/website/](https://perytonspace.github.io/website/) (`website` repo).
-
-Cloudflare Pages (production domain `peryton.space`) is documented in `.planning/docs/HOSTING.md`.
-
-## What is not in git
-
-Unused WordPress scrape and the full `wp-content` media archive are gitignored. The site uses:
-
-- `web/content/scrape/pages.json` — leftover WP HTML fallback
-- `web/public/wp-content/` — curated uploads only (`npm run sync-media`)
+Do not push another full copy of the `website` Next rebuild here.

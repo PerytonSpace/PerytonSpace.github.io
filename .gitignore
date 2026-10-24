@@ -1,16 +1,3 @@
-# Unused WordPress scrape / full media archive (not deployed).
-# Live fallback HTML is web/content/scrape/pages.json; curated media is web/public/wp-content/.
-/pages/
-/wp-content/
-/exports/
-/index.json
-/assets/
-/scrape_site.py
-/serve.py
-/__pycache__/
-*.pyc
-
 .DS_Store
-.cursor/
-*.pem
-.env*
+node_modules/
+.wrangler/
